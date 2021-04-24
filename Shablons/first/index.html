@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <title>Frame</title>
@@ -25,15 +26,64 @@
             </header>
 
             <div class="author-block">
-                <div class="author-text-block">
-                    <div class="author-text-flex">
-                        <div class="author-name">Denis <br> Novik</div>
-                        <div class="author-text">UX | UI designer <br> 24 years old, Minsk</div>
-                        <div class="author-lang">RU <span>| ENG</span></div>
-                    </div>
-                </div>
+                <div class="author-lang">RU <span>| ENG</span></div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="author-text-block">
+                                <div class="author-text-flex">
+                                    <div class="author-name">Maria <br> Belgir</div>
+                                    <div class="author-text">CSS | HTML designer <br> 21 years old, Kiev</div>
 
-                <img src="img/author2.png" alt="" class="author-img">
+                                </div>
+                            </div>
+                            <img src="img/author2.png" alt="" class="author-img">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="author-text-block">
+                                <div class="author-text-flex">
+                                    <div class="author-name">Denis <br> Novik</div>
+                                    <div class="author-text">UX | UI designer <br> 24 years old, Minsk</div>
+                                </div>
+                            </div>
+                            <img src="img/author.png" alt="" class="author-img">
+                        </div>
+
+
+                        <div class="swiper-slide">
+                           <div class="author-text-block">
+                                <div class="author-text-flex">
+                                    <div class="author-name">Denis <br> Novik</div>
+                                    <div class="author-text">UX | UI designer <br> 24 years old, Minsk</div>
+                                </div>
+                            </div>
+                            <img src="img/author1.png" alt="" class="author-img">
+
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="author-text-block">
+                                <div class="author-text-flex">
+                                    <div class="author-name">Denis <br> Novik</div>
+                                    <div class="author-text">UX | UI designer <br> 24 years old, Minsk</div>
+                                </div>
+                            </div>
+                            <img src="img/author3.png" alt="" class="author-img">
+                        </div>
+
+                        <div class="swiper-slide">
+                           <div class="author-text-block">
+                                <div class="author-text-flex">
+                                    <div class="author-name">Denis <br> Novik</div>
+                                    <div class="author-text">UX | UI designer <br> 24 years old, Minsk</div>
+                                </div>
+                            </div>
+                            <img src="img/author4.png" alt="" class="author-img">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
 
             </div>
         </div>
@@ -139,15 +189,80 @@
         <div class="portfolio-block">
             <div class="container">
                 <div class="portfolio-site">
-                    <div class="text-block">
-                        <h1 class="title">Portfolio</h1>
+                   <h1 class="title title-folio">Portfolio</h1>
+
+                    <div class="text-block text-block__folio">
                         <img src="img/site1.png" alt="" class="portfolio-img">
                         <a href="" class="portfolio-link">Online fashion store - Homepage</a>
                     </div>
+
+                    <div class="text-block text-block__folio">
+                        <img src="img/site2.png" alt="" class="portfolio-img">
+                        <a href="" class="portfolio-link">Reebok Store - Concept</a>
+                    </div>
+
+                    <div class="text-block text-block__folio">
+                        <img src="img/site3.png" alt="" class="portfolio-img">
+                        <a href="" class="portfolio-link">Braun Landing Page - Concept</a>
+                    </div>
+
                 </div>
             </div>
         </div>
+
+        <footer class="contacts">
+            <div class="container">
+                <div class="text-block text-block__contacts">
+                    <h1 class="title">Contacts</h1>
+                    <p class="text">Want to know more or just chat? <br>You are welcome!</p>
+                    <a href="" class="btn">Send message</a>
+
+                    <div class="nav-icons">
+                        <a href="" class="nav-link">
+                            <img src="img/insta.png" alt="">
+                        </a>
+
+                        <a href="" class="nav-link">
+                            <img src="img/insta2.png" alt="">
+                        </a>
+
+                        <a href="" class="nav-link">
+                            <img src="img/insta3.png" alt="">
+                        </a>
+
+                        <a href="" class="nav-link">
+                            <img src="img/insta4.png" alt="">
+                        </a>
+                    </div>
+
+                    <p class="text__footer">Like me on <br>LinkedIn, Instagram, Behance, Dribble</p>
+
+                </div>
+            </div>
+        </footer>
+
+
     </div>
+
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    </script>
+
 </body>
 
 </html>

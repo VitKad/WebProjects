@@ -32,6 +32,30 @@ h6 {
 
 }
 
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    margin-top: -10px;
+
+    color: #fff;
+
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+
+    background-color: #000;
+    border-radius: 30px;
+
+    text-decoration: none;
+
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    color: #fff;
+    margin-top: 190px;
+}
+
 /*HEADER
 ******************/
 
@@ -72,6 +96,7 @@ h6 {
 *************/
 .author-block {
     height: 545px;
+    position: relative;
 
 }
 
@@ -134,7 +159,7 @@ h6 {
 
     position: absolute;
     right: -22px;
-    bottom: 35px;
+    top: 92px;
 }
 
 .author-lang span {
@@ -159,7 +184,7 @@ h6 {
     height: 506px;
     background-color: #F6F6F6;
 
-    margin-top: 105px;
+    margin-top: 135px;
     padding-top: 115px;
 
 
@@ -228,7 +253,7 @@ h6 {
 
 }
 
-.skills-prog-block:last-child{
+.skills-prog-block:last-child {
     margin: 0;
 }
 
@@ -249,7 +274,7 @@ h6 {
 }
 
 
-.skills-prog-block:last-child .skills-img{
+.skills-prog-block:last-child .skills-img {
     position: absolute;
     top: 44px;
     left: 60px;
@@ -278,11 +303,11 @@ h6 {
     left: 8px;
 }
 
-.star{
+.star {
     margin-right: 9px;
 }
 
-.star:last-child{
+.star:last-child {
     margin: 0;
 }
 
@@ -291,12 +316,73 @@ h6 {
 /*PORTFOLIO
 ***************/
 
-.portfolio-block{
+.portfolio-block {
     height: 2255px;
 
     background-color: #F6F6F6;
 }
 
-.portfolio-site{
+.portfolio-site {
     padding-top: 107px;
+}
+
+
+.portfolio-img {
+    margin: 35px 0;
+}
+
+.portfolio-link {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    text-align: center;
+    margin-left: 5px;
+
+    color: #000;
+}
+
+.title-folio {
+    text-align: center;
+    margin-left: 5px;
+}
+
+.text-block__folio {
+    margin-bottom: 66px;
+}
+
+/*CONTACTS
+**************/
+.contacts {
+    height: 500px;
+}
+
+.text-block__contacts {
+    margin-top: 106px;
+}
+
+
+.nav-icons {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+    justify-content: center;
+
+}
+
+.nav-link {
+    margin: 85px 31px 0;
+}
+
+.text__footer {
+    margin-top: 37px;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: center;
+
+    color: #828282;
 }

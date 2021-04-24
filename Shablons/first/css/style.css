@@ -71,7 +71,7 @@ h6 {
 /*AUTHOR
 *************/
 .author-block {
-    height: 535px;
+    height: 545px;
 
 }
 
@@ -146,6 +146,126 @@ h6 {
 }
 
 
-.author-img{
+.author-img {
     margin-top: 49px;
+}
+
+
+/*ABOUT ME
+********************/
+
+.aboutme-block {
+
+    height: 506px;
+    background-color: #F6F6F6;
+
+    margin-top: 105px;
+    padding-top: 115px;
+
+
+}
+
+.text-block {
+    width: 945px;
+    text-align: center;
+}
+
+.title {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 42px;
+
+    margin-bottom: 21px;
+
+
+}
+
+.text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+
+    margin-bottom: 43px;
+
+
+}
+
+
+/*SKILLS
+**************/
+
+.skills-block {
+    height: 506px;
+    background-color: #fff;
+
+    padding-top: 85px;
+}
+
+.skills-block .title {
+    margin-bottom: 56px;
+}
+
+
+.skills-prog {}
+
+
+.skills-prog-flex {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+
+
+.skills-prog-block {
+    width: 170px;
+    margin-right: 87px;
+
+    position: relative;
+
+}
+
+.skills-prog-block:last-child{
+    margin: 0;
+}
+
+.prog {
+    width: 90px;
+
+    padding: 44px 44px 0;
+    margin-bottom: 36px;
+
+
+}
+
+.skills-img {
+
+    top: 44px;
+    left: 44px;
+}
+
+.skills-prog-name {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+
+    display: inline-block;
+
+    padding-top: 15px;
+    padding-left: 10px;
+
+}
+
+
+.skills-prog-rate {
+    margin-left: 8px;
+}
+
+.star{
+    margin-right: 9px;
+}
+
+.star:last-child{
+    margin: 0;
 }

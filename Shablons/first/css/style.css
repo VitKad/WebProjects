@@ -166,7 +166,7 @@ h6 {
 }
 
 .text-block {
-    width: 945px;
+    width: 950px;
     text-align: center;
 }
 
@@ -199,6 +199,8 @@ h6 {
     background-color: #fff;
 
     padding-top: 85px;
+
+    margin-bottom: 104px;
 }
 
 .skills-block .title {
@@ -206,7 +208,6 @@ h6 {
 }
 
 
-.skills-prog {}
 
 
 .skills-prog-flex {
@@ -215,6 +216,7 @@ h6 {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
+
 }
 
 
@@ -241,25 +243,39 @@ h6 {
 
 .skills-img {
 
+    position: absolute;
     top: 44px;
     left: 44px;
 }
 
+
+.skills-prog-block:last-child .skills-img{
+    position: absolute;
+    top: 44px;
+    left: 60px;
+}
+
+
 .skills-prog-name {
+    width: 90px;
+
     font-size: 14px;
     line-height: 17px;
     text-align: center;
 
     display: inline-block;
 
-    padding-top: 15px;
-    padding-left: 10px;
+    position: absolute;
+    top: 155px;
+    left: 43px;
 
 }
 
 
 .skills-prog-rate {
-    margin-left: 8px;
+    position: absolute;
+    top: 227px;
+    left: 8px;
 }
 
 .star{
@@ -268,4 +284,19 @@ h6 {
 
 .star:last-child{
     margin: 0;
+}
+
+
+
+/*PORTFOLIO
+***************/
+
+.portfolio-block{
+    height: 2255px;
+
+    background-color: #F6F6F6;
+}
+
+.portfolio-site{
+    padding-top: 107px;
 }

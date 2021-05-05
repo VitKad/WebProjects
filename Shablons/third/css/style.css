@@ -112,6 +112,7 @@ h6 {
   position: absolute;
   top: 230px;
   right: 0;
+  pointer-events: none;
 }
 /*SERVICES
 *************/
@@ -174,6 +175,7 @@ h6 {
   color: #C4C4C4;
   position: absolute;
   right: -110px;
+  pointer-events: none;
 }
 .btn--touch::before {
   content: '';
@@ -183,6 +185,7 @@ h6 {
   position: absolute;
   top: 25px;
   right: -70px;
+  pointer-events: none;
 }
 .services__list {
   padding: 0;

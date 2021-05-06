@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
     <title>Document</title>
 </head>
 
@@ -33,21 +35,21 @@
 
                 <a class="btn" href="">КОНСУЛЬТАЦИЯ ЭКСПЕРТА</a>
 
-                <div class="header__social">
-                    <a class="header__social-link" href="">
-                        <img class="header__social-img" src="img/instagram.svg" alt="insta">
+                <div class="social header__social">
+                    <a class="social__link" href="">
+                        <img class="social__img" src="img/instagram.svg" alt="insta">
                     </a>
 
-                    <a class="header__social-link" href="">
-                        <img class="header__social-img" src="img/telegram.svg" alt="telegram">
+                    <a class="social__link" href="">
+                        <img class="social__img" src="img/telegram.svg" alt="telegram">
                     </a>
 
-                    <a class="header__social-link" href="">
-                        <img class="header__social-img" src="img/whatsapp.svg" alt="whatsapp">
+                    <a class="social__link" href="">
+                        <img class="social__img" src="img/whatsapp.svg" alt="whatsapp">
                     </a>
 
-                    <a class="header__social-link" href="">
-                        <img class="header__social-img" src="img/facebook.svg" alt="facebook">
+                    <a class="social__link" href="">
+                        <img class="social__img" src="img/facebook.svg" alt="facebook">
                     </a>
 
                 </div>
@@ -126,6 +128,161 @@
 
         </div>
     </section>
+
+    <section class="benefites">
+        <div class="container">
+            <div class="benefites__inner">
+                <img class="benefites__img" src="img/benCar.png" alt="car">
+                <div class="benefites__content">
+                    <h2 class="title benefites__title">ПОЧЕМУ МЫ?</h2>
+                    <ul class="benefites__list">
+
+                        <li class="benefites__item">
+                            <p class="benefites__item-num">650</p>
+                            <p class="benefites__item-title">успешно доставленных авто</p>
+                            <p class="benefites__item-text">большой опыт пригона автомобилей из США под ключ, все клиенты остались довольны на 100%</p>
+                        </li>
+                        <li class="benefites__item">
+                            <p class="benefites__item-num">5</p>
+                            <p class="benefites__item-title">лет на рынке Украины</p>
+                            <p class="benefites__item-text">Работаем по всей территории Украины, работаем по договору с клиентами</p>
+                        </li>
+                        <li class="benefites__item">
+                            <p class="benefites__item-num">100 %</p>
+                            <p class="benefites__item-title">доверия клиентов</p>
+                            <p class="benefites__item-text">Онлайн отчетность. Вы всегда в курсе статуса подбора вашего авто. Фото и видео отчет</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="carousel">
+        <div class="container">
+            <h2 class="title">ПРИГНАННЫЕ НАМИ АВТО</h2>
+            <div class="carousel__inner">
+                <div class="carousel__inner-block">
+
+                    <div class="carousel__box">
+                        <img class="carousel__img" src="img/slider/sl1.jpg" alt="car1">
+                        <p class="carousel__title">INFINITI QX50 2016 г.</p>
+                        <p class="carousel__text">Экономия 4500 $</p>
+                    </div>
+                    <div class="carousel__box">
+                        <img class="carousel__img" src="img/slider/sl2.jpg" alt="car1">
+                        <p class="carousel__title">TESLA MODEL 3 2018 г.</p>
+                        <p class="carousel__text">Экономия 5500 $</p>
+                    </div>
+                    <div class="carousel__box">
+                        <img class="carousel__img" src="img/slider/sl3.jpg" alt="car1">
+                        <p class="carousel__title">LEXUS D5000 2019 г.</p>
+                        <p class="carousel__text">Экономия 6500 $</p>
+                    </div>
+                    <div class="carousel__box">
+                        <img class="carousel__img" src="img/slider/sl1.jpg" alt="car1">
+                        <p class="carousel__title">INFINITI QX50 2016 г.</p>
+                        <p class="carousel__text">Экономия 4500 $</p>
+                    </div>
+                    <div class="carousel__box">
+                        <img class="carousel__img" src="img/slider/sl3.jpg" alt="car1">
+                        <p class="carousel__title">LEXUS D5000 2019 г.</p>
+                        <p class="carousel__text">Экономия 6500 $</p>
+                    </div>
+                    <div class="carousel__box">
+                        <img class="carousel__img" src="img/slider/sl1.jpg" alt="car1">
+                        <p class="carousel__title">INFINITI QX50 2016 г.</p>
+                        <p class="carousel__text">Экономия 4500 $</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__inner">
+                <div class="contacts__content">
+                    <h2 class="title">КОНТАКТЫ</h2>
+                    <ul class="contacts__list">
+
+                        <li class="contacts__item">
+                            <p class="contacts__item-title">Адрес</p>
+                            <p class="contacts__item-text">
+                                Киев, Подол <br>
+                                ул. Константиновская, д.71
+                            </p>
+                        </li>
+                        <li class="contacts__item">
+                            <p class="contacts__item-title">
+                                Время работы
+                            </p>
+                            <p class="contacts__item-text">
+                                Пн-Сб: с 9:00 до 19:00, <br>
+                                Вс: выходной
+                            </p>
+                        </li>
+                        <li class="contacts__item">
+                            <p class="contacts__item-title">
+                                Телефон
+                            </p>
+                            <p class="contacts__item-text">
+                                +38 (050) 555 66 77</p>
+                        </li>
+
+                    </ul>
+                </div>
+                <form class="contacts__form" action="/">
+                    <h2 class="title contacts__title">Оставить заявку</h2>
+                    <input class="contacts__input" type="text" placeholder="Как Вас зовут?">
+                    <input class="contacts__input" type="tel" placeholder="Ваш номер телефона">
+                    <button class="btn contacts__btn">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+
+                <a class="logo" href="#">
+                    <img class="logo__img" src="img/logo.svg" alt="logo">
+                </a>
+
+                <div class="social">
+                    <a class="social__link" href="">
+                        <img class="social__img" src="img/instagram.svg" alt="insta">
+                    </a>
+
+                    <a class="social__link" href="">
+                        <img class="social__img" src="img/telegram.svg" alt="telegram">
+                    </a>
+
+                    <a class="social__link" href="">
+                        <img class="social__img" src="img/whatsapp.svg" alt="whatsapp">
+                    </a>
+
+                    <a class="social__link" href="">
+                        <img class="social__img" src="img/facebook.svg" alt="facebook">
+                    </a>
+
+                </div>
+
+                <a class="footer__copy" href="">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

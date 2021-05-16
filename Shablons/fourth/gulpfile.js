@@ -5,6 +5,8 @@ let gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename');
 
+const devip = require('dev-ip');
+
 
     gulp.task('scss', function(){
         return gulp.src('app/scss/**/*.scss')
@@ -27,14 +29,13 @@ let gulp = require('gulp'),
     }); 
 
     gulp.task('js', function(){
-        /*return gulp.src([
-            'node_modules/slick-carousel/slick/slick.js',
-            'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
+        return gulp.src([
+            'node_modules/slick-carousel/slick/slick.js'
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('app/js'))
-        .pipe(browserSync.reload({stream:true}));*/
+        .pipe(browserSync.reload({stream:true}));
     });
 
 
@@ -42,7 +43,9 @@ let gulp = require('gulp'),
         browserSync.init({
             server: {
                 baseDir: "app/"
-            }
+            },
+            notify: false,
+            host: devip() 
         });
     });
 
@@ -50,7 +53,7 @@ let gulp = require('gulp'),
         gulp.watch('app/scss/**/*.scss', gulp.parallel('scss'));
         gulp.watch('app/**/*.html', gulp.parallel('html'));
         gulp.watch('app/js/**/*.html', gulp.parallel('js'));
-        gulp.watch('app/**/*.html', gulp.parallel('script'));
+        gulp.watch('app/**/*.js', gulp.parallel('script'));
     });
 
 

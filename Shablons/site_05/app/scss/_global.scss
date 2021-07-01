@@ -1,17 +1,168 @@
-h1{
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: $black-color;
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $white-color;
+}
+
+h1 {
     font-family: $top-family;
     font-size: 64px;
-    font-style: 700;
+    font-weight: 700;
 }
 
-h2{
+h2 {
     font-family: $top-family;
     font-size: 24px;
-    font-style: 700;
+    font-weight: 700;
 }
 
-h3{
+h3 {
     font-family: $top-family;
     font-size: 18px;
-    font-style: 700;
+    font-weight: 700;
 }
+
+.container {
+    width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.btn {
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    display: inline-block;
+    color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+    &::before {
+        content: "";
+        width: 100px;
+        height: 100px;
+        border: 2px solid #FFFFFF;
+        border-radius: 50%;
+        position: absolute;
+        top: -60px;
+        left: -50px;
+        z-index: -1;
+
+    }
+    &::after {
+        content: "";
+        width: 42px;
+        height: 16px;
+
+        background-image: url("../img/Arrow-white.svg");
+        position: absolute;
+        top: -17px;
+        left: -20px;
+    }
+
+    &:hover::before {
+        background-color: $hover-color;
+
+    }
+
+
+}
+
+.btn-black{
+        color:$black-color;
+
+        &::before {
+        border: 2px solid $black-color;
+        }
+
+        &::after {
+            width: 41px;
+        height: 16px;
+            background-image: url("../img/Arrow-black.svg");
+        }
+    }
+.social {
+    &__link {
+        margin: 0 10px;
+    }
+}
+
+.block {
+    margin-bottom: 150px;
+}
+
+.title {
+    color: #868585;
+    margin-bottom: 60px;
+}
+
+.slick-initialized .slick-slide {
+    display: flex;
+
+}
+
+.slick-dots {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 0;
+
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+
+    
+  }
+  .slick-dots li {
+    margin: 0 10px;
+
+  }
+  .slick-dots button {
+    border: none;
+    font-size: 0px;
+    width: 50px;
+    height: 1px;
+    background-color: #c4c4c4;
+
+  }
+  .slick-active button {
+    border: none;
+    font-size: 0px;
+    width: 50px;
+    height: 3px;
+    background-color: #5A0D67;
+
+  }

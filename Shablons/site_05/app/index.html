@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
     <head>
         <meta charset="UTF-8">
@@ -18,34 +18,42 @@
     </head>
 
     <body>
-        <header class="header block">
-            <div class="container">
-                <div class="header__inner">
-                    <a href="#" class="logo">
-                        <img src="img/logo.svg" alt="logo" class="logo-img">
+        <header class="header">
+            <a href="#" class="logo">
+                <img src="img/logo.svg" alt="logo" class="logo-img">
+            </a>
+            <p class="header__text">Зеленый тариф для дома и бизнеса</p>
+            <h1 class="header__title">Солнечная электростанция</h1>
+            <!-- СДЕЛАТЬ ЧЕРЕЗ СПАН -->
+            <h2 class="header__subtitle">с доходом от 1000 $ в месяц</h2>
+
+            <!-- Можно добавить свд код и спан для текста -->
+            <span>
+                <a href="" class="btn header__btn">записаться на консультацию</a>
+            </span>
+            <ul class="social">
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img src="img/social/instagram.svg" alt="instagram" class="social__img">
                     </a>
-                    <p class="header__text">Зеленый тариф для дома и бизнеса</p>
-                    <h1 class="header__title">Солнечная электростанция</h1>
-                    <h2 class="header__subtitle">с доходом от 1000 $ в месяц</h2>
-                    <a href="" class="btn header__btn">записаться на консультацию</a>
-                    <div class="social">
-                        <a href="#" class="social__link">
-                            <img src="img/social/instagram.svg" alt="instagram" class="social__img">
-                        </a>
-                        <a href="#" class="social__link">
-                            <img src="img/social/telegram.svg" alt="telegram" class="social__img">
-                        </a>
-                        <a href="#" class="social__link">
-                            <img src="img/social/whatsapp.svg" alt="whatsapp" class="social__img">
-                        </a>
-                        <a href="#" class="social__link">
-                            <img src="img/social/facebook.svg" alt="facebook" class="social__img">
-                        </a>
-                    </div>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img src="img/social/telegram.svg" alt="telegram" class="social__img">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img src="img/social/whatsapp.svg" alt="whatsapp" class="social__img">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img src="img/social/facebook.svg" alt="facebook" class="social__img">
+                    </a>
+                </li>
+            </ul>
 
-                </div>
-
-            </div>
         </header>
 
         <div class="services block">
@@ -104,29 +112,43 @@
                 <div class="description__inner">
                     <div class="description__content">
 
-                        <div class="description__nav">
-                            <a href="" class="description__nav-item">продажа</a>
-                            <a href="" class="description__nav-item">закрепление</a>
-                            <a href="" class="description__nav-item">ограничения</a>
-                        </div>
+                        <div class="description__tab">
+                            <div class="description__tab-items">
+                                <a href="#tab1" class="description__tab-item description__tab-item--active">продажа</a>
+                                <a href="#tab2" class="description__tab-item">закрепление</a>
+                                <a href="#tab3" class="description__tab-item">ограничения</a>
+                            </div>
+                            <div class="description__tab-contentbox">
+                                <div class="description__tab-content description__tab-content--active"
+                                    id="tab1">
+                                    <div class="description__slider">
+                                        <div class="description__slider-block">
+                                            <img src="img/slick1.jpg" alt="" class="description__slider-img">
+                                            <p class="description__slider-text">Цена, по которой домохозяйства могут продать
+                                                электроэнергию, более чем в 10 раз превышает цену, по которой они ее покупают
+                                                для своих нужд — 0,16 Евро/кВт (продажа).</p>
+                                        </div>
 
-                        <div class="description__carousel">
-                         
-                            <div class="description__carousel-block">
-                                <img src="img/slick1.jpg" alt="" class="description__carousel-img">
-                                <p class="description__carousel-text">Цена, по которой домохозяйства могут
-                                    продать электроэнергию, более чем в 10 раз превышает цену, по которой они ее
-                                    покупают для своих нужд — 0,16 Евро/кВт (продажа).</p>
+                                        <div class="description__slider-block">
+                                            <img src="img/slick2.jpg" alt="" class="description__slider-img">
+                                            <p class="description__slider-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Последний залетают за lorem переписывается! Злых деревни домах, несколько о переписывается города океана это меня реторический предложения рукописи его бросил.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="description__tab-content" id="tab2">
+                                    First Далеко-далеко за словесными горами в стране гласных и согласных живут
+                                    рыбные тексты. Которое текст своих запятой ее, решила продолжил путь пустился
+                                    она власти. Вопрос, не океана страну взгляд переулка семь на берегу заголовок.
+                                </div>
+
+                                <div class="description__tab-content" id="tab3">
+                                    Second Далеко-далеко за словесными горами в стране гласных и согласных живут
+                                    рыбные тексты. Которое текст своих запятой ее, решила продолжил путь пустился
+                                    она власти. Вопрос, не океана страну взгляд переулка семь на берегу заголовок.
+                                </div>
+
                             </div>
-                          
-                          
-                            <div class="description__carousel-block">
-                                <img src="img/slick1.jpg" alt="" class="description__carousel-img">
-                                <p class="description__carousel-text">Цена, по которой домохозяйства могут
-                                    продать электроэнергию, более чем в 10 раз превышает цену, по которой они ее
-                                    покупают для своих нужд — 0,16 Евро/кВт (продажа).</p>
-                            </div>
-                         
                         </div>
 
                         <div class="description__benefits">
@@ -161,7 +183,10 @@
                     </div>
 
                     <div class="description__block">
-                        <p class="description__block-text">«Зеленый тариф» — это особые тарифные условия, которые позволяют частным домохозяйствам  не только потреблять, но и продавать выработанное домашними солнечными электростанциями электричество в электросеть общего пользования.</p>
+                        <p class="description__block-text">«Зеленый тариф» — это особые тарифные
+                            условия, которые позволяют частным домохозяйствам не только потреблять, но и
+                            продавать выработанное домашними солнечными электростанциями электричество в
+                            электросеть общего пользования.</p>
                         <img src="img/description.jpg" alt="Home" class="description__block-img">
                     </div>
 
@@ -205,7 +230,9 @@
             <div class="container">
                 <div class="steps__inner">
                     <div class="steps__content">
-                        <h2 class="title steps__title">5 ШАГОВ К СОБСТВЕННОЙ <br> ЭЛЕКТРОСТАНЦИИ</h2>
+                        <h2 class="title steps__title">5 ШАГОВ К СОБСТВЕННОЙ
+                            <br>
+                            ЭЛЕКТРОСТАНЦИИ</h2>
                         <ol class="steps__list">
 
                             <li class="steps__item">
@@ -324,7 +351,6 @@
 
             </div>
         </footer>
-
 
         <script src="js/main.min.js"></script>
     </body>

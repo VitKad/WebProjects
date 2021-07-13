@@ -5,24 +5,30 @@
 @import "global";
 
 .header {
-    min-height: 900px;
+    height: 100vh;
+    //100 vh чтоб на весь жкран любого моника
     background-image: url("../img/header.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
 
+    color: $white-color;
+
+    //хидер сделан через флекс чтоб для люого моника был норм отступы
+    //убран контейнер для работы jcsb
+
+    padding: 70px 10px 38px;
     align-items: center;
     text-align: center;
 
-    color: $white-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-    &__inner {
-        padding: 70px 0 0;
-
-    }
+    margin-bottom: 150px;
 
     &__text {
-        margin-top: 140px;
+        margin-top: auto;
         margin-bottom: 30px;
 
         font-weight: 400;
@@ -58,6 +64,7 @@
 
     &__content {
         width: 510px;
+        //моно использовать flex-basis:510px
     }
 
     &__block {
@@ -67,13 +74,18 @@
     &__block-title {
         margin-bottom: 15px;
     }
+
+    &__img{
+        object-fit: cover;
+        //для того чтоб изображение не тянулось при увеличении текста из за флекса
+    }
 }
 
 .description {
     &__inner {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        
     }
 
     &__content {
@@ -81,10 +93,12 @@
 
     }
 
-    &__nav {
-        display: flex;
-        margin-bottom: 125px;
-
+    &__tab {
+        margin-bottom: 100px;
+        &-items{
+            display: flex;
+            margin-bottom: 125px;
+        }
         &-item {
             margin-right: 40px;
             color: $black-color;
@@ -92,25 +106,42 @@
             font-size: 18px;
             line-height: 25px;
 
+            &--active{
+                border-bottom: 1px solid $black-color;
+            }
+
             &:hover {
-                text-decoration: underline;
+                border-bottom: 1px solid $hover-color;
             }
         }
-    }
 
-    &__carousel {
-        margin-bottom: 100px;
-        position: relative;
+        &-content{
+            display: none;
 
-        &-block {
-            display: flex;
+            &--active{
+                display: block;
+            }
         }
 
-        &-img {
+        
+    }
+
+
+    &__slider{
+        max-width: 510px;
+        &-img{
             margin-right: 40px;
-
+            float: left;
+            
         }
+
+        &-text{
+            padding-bottom: 15px;
+        }
+
+    
     }
+
 
     &__benefits {
         display: flex;
@@ -247,16 +278,16 @@
     background-repeat: no-repeat;
     background-position: top center;
 
-    &__inner{
+    &__inner {
         display: flex;
         justify-content: space-between;
-        align-items:center;
+        align-items: center;
 
         padding-bottom: 50px;
     }
 
-    &__copy{
-        &:hover{
+    &__copy {
+        &:hover {
             text-decoration: underline;
         }
     }
@@ -270,7 +301,7 @@
         width: 510px;
         margin-right: 90px;
 
-        &-title{
+        &-title {
             color: $white-color;
         }
     }
@@ -304,7 +335,7 @@
     &__content {
         color: $white-color;
 
-        &-title{
+        &-title {
             color: $white-color;
         }
 
@@ -320,10 +351,10 @@
 
     &__item {
         margin-bottom: 30px;
-       
+
     }
 
-    &__text{
+    &__text {
         font-size: 18px;
         line-height: 25px;
         font-weight: 400;

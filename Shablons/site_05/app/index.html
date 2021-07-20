@@ -20,7 +20,7 @@
     <body>
         <header class="header">
             <a href="#" class="logo">
-                <img src="img/logo.svg" alt="logo" class="logo-img">
+                <img class="logo-img" src="img/logo.svg" alt="logo">
             </a>
             <p class="header__text">Зеленый тариф для дома и бизнеса</p>
             <h1 class="header__title">Солнечная электростанция</h1>
@@ -29,34 +29,34 @@
 
             <!-- Можно добавить свд код и спан для текста -->
             <span>
-                <a href="" class="btn header__btn">записаться на консультацию</a>
+                <a class="btn header__btn" href="" >записаться на консультацию</a>
             </span>
             <ul class="social">
                 <li class="social__item">
-                    <a href="#" class="social__link">
-                        <img src="img/social/instagram.svg" alt="instagram" class="social__img">
+                    <a class="social__link" href="#">
+                        <img class="social__img" src="img/social/instagram.svg" alt="instagram" >
                     </a>
                 </li>
                 <li class="social__item">
-                    <a href="#" class="social__link">
-                        <img src="img/social/telegram.svg" alt="telegram" class="social__img">
+                    <a class="social__link" href="#" >
+                        <img class="social__img" src="img/social/telegram.svg" alt="telegram" >
                     </a>
                 </li>
                 <li class="social__item">
-                    <a href="#" class="social__link">
-                        <img src="img/social/whatsapp.svg" alt="whatsapp" class="social__img">
+                    <a class="social__link" href="#" >
+                        <img class="social__img" src="img/social/whatsapp.svg" alt="whatsapp" >
                     </a>
                 </li>
                 <li class="social__item">
-                    <a href="#" class="social__link">
-                        <img src="img/social/facebook.svg" alt="facebook" class="social__img">
+                    <a class="social__link" href="#" >
+                        <img class="social__img" src="img/social/facebook.svg" alt="facebook" >
                     </a>
                 </li>
             </ul>
 
         </header>
 
-        <div class="services block">
+        <section class="services block">
             <div class="container">
                 <h2 class="title services__title">УСЛУГИ</h2>
                 <div class="services__inner">
@@ -101,12 +101,12 @@
 
                     </div>
 
-                    <img src="img/services-img.jpg" alt="services" class="services__img">
+                    <img class="services__img" src="img/services-img.jpg" alt="services" >
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="description block">
+        <section class="description block">
             <div class="container">
                 <h2 class="title description__title">ЗЕЛЕНЫЙ ТАРИФ</h2>
                 <div class="description__inner">
@@ -114,24 +114,28 @@
 
                         <div class="description__tab">
                             <div class="description__tab-items">
-                                <a href="#tab1" class="description__tab-item description__tab-item--active">продажа</a>
-                                <a href="#tab2" class="description__tab-item">закрепление</a>
-                                <a href="#tab3" class="description__tab-item">ограничения</a>
+                                <a class="description__tab-item description__tab-item--active" href="#tab1" >продажа</a>
+                                <a class="description__tab-item" href="#tab2" >закрепление</a>
+                                <a class="description__tab-item" href="#tab3" >ограничения</a>
                             </div>
                             <div class="description__tab-contentbox">
-                                <div class="description__tab-content description__tab-content--active"
+                                <div
+                                    class="description__tab-content description__tab-content--active"
                                     id="tab1">
                                     <div class="description__slider">
                                         <div class="description__slider-block">
-                                            <img src="img/slick1.jpg" alt="" class="description__slider-img">
+                                            <img class="description__slider-img" src="img/slick1.jpg" alt="" >
                                             <p class="description__slider-text">Цена, по которой домохозяйства могут продать
                                                 электроэнергию, более чем в 10 раз превышает цену, по которой они ее покупают
                                                 для своих нужд — 0,16 Евро/кВт (продажа).</p>
                                         </div>
 
                                         <div class="description__slider-block">
-                                            <img src="img/slick2.jpg" alt="" class="description__slider-img">
-                                            <p class="description__slider-text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Последний залетают за lorem переписывается! Злых деревни домах, несколько о переписывается города океана это меня реторический предложения рукописи его бросил.</p>
+                                            <img class="description__slider-img" src="img/slick2.jpg" alt="" >
+                                            <p class="description__slider-text">Далеко-далеко за словесными горами в стране
+                                                гласных и согласных живут рыбные тексты. Последний залетают за lorem
+                                                переписывается! Злых деревни домах, несколько о переписывается города океана это
+                                                меня реторический предложения рукописи его бросил.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -187,12 +191,12 @@
                             условия, которые позволяют частным домохозяйствам не только потреблять, но и
                             продавать выработанное домашними солнечными электростанциями электричество в
                             электросеть общего пользования.</p>
-                        <img src="img/description.jpg" alt="Home" class="description__block-img">
+                        <img class="description__block-img" src="img/description.jpg" alt="Home" >
                     </div>
 
                 </div>
             </div>
-        </div>
+        </section>
 
         <div class="quote block">
             <div class="container">
@@ -203,30 +207,50 @@
             </div>
         </div>
 
-        <div class="clients block">
+        <section class="clients block">
             <div class="container">
                 <h2 class="title">НАШИ КЛИЕНТЫ</h2>
                 <div class="clients__inner">
-                    <div class="clients__carousel">
-                        <img src="img/clients1.jpg" alt="home" class="clients__img">
-                    </div>
+                    <div class="clients__slider">
+                        <div class="clients__slider-box">
+                            <div class="clients__carousel">
+                                <img class="clients__img" src="img/clients1.jpg" alt="home" >
 
-                    <div class="clients__block">
-                        <h3 class="clients__title">Солнечная электростанция 30 кВт подключенная по Зеленому Тарифу</h3>
-                        <ul class="clients__list">
-                            <li class="clients__item">Расположение: Харьковская обл., г. Харьков</li>
-                            <li class="clients__item">Чистый доход за вычетом налогов с мая 2017 г. по май 2019 г. 13 900 $.</li>
-                            <li class="clients__item">Смонтирована: апрель 2017 г.</li>
-                            <li class="clients__item">Срок службы: 25-30 лет</li>
-                        </ul>
-                        <a href="#" class="btn btn-black clients__btn">записаться на консультацию</a>
-                    </div>
+                                <div class="clients__block">
+                                    <h3 class="clients__title">Солнечная электростанция 30 кВт подключенная по Зеленому Тарифу</h3>
+                                    <ul class="clients__list">
+                                        <li class="clients__item">Расположение: Харьковская обл., г. Харьков</li>
+                                        <li class="clients__item">Чистый доход за вычетом налогов с мая 2017 г. по май 2019 г. 13 900 $.</li>
+                                        <li class="clients__item">Смонтирована: апрель 2017 г.</li>
+                                        <li class="clients__item">Срок службы: 25-30 лет</li>
+                                    </ul>
+                                    <a class="btn btn-black clients__btn" href="#" >записаться на консультацию</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clients__slider-box">
+                            <div class="clients__carousel">
+                                <img class="clients__img" src="img/clients1.jpg" alt="home" >
 
+                                <div class="clients__block">
+                                    <h3 class="clients__title">Солнечная электростанция 30 кВт подключенная по Зеленому Тарифу</h3>
+                                    <ul class="clients__list">
+                                        <li class="clients__item">Расположение: Республика Карелия, г. Петрозаводск</li>
+                                        <li class="clients__item">Чистый доход за вычетом налогов с мая 2017 г. по май 2019 г. 13 900 $.</li>
+                                        <li class="clients__item">Смонтирована: апрель 2017 г.</li>
+                                        <li class="clients__item">Срок службы: 25-30 лет</li>
+                                    </ul>
+                                    <a class="btn btn-black clients__btn" href="#" >записаться на консультацию</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="steps block">
+        <section class="steps block">
             <div class="container">
                 <div class="steps__inner">
                     <div class="steps__content">
@@ -283,7 +307,7 @@
 
                 </div>
             </div>
-        </div>
+        </section>
 
         <footer class="footer">
             <div class="container">
@@ -292,7 +316,7 @@
                         <h2 class="title contacts__form-title">ОСТАВИТЬ ЗАЯВКУ</h2>
                         <input type="text" class="contacts__input" placeholder="Имя">
                         <input type="tel" class="contacts__input" placeholder="Телефон">
-                        <a href="" class="btn contacts__btn">оставить заявку</a>
+                        <button href="" class="btn contacts__btn">оставить заявку</button>
                     </div>
 
                     <div class="contacts__content">
@@ -315,8 +339,9 @@
                             </li>
 
                             <li class="contacts__item">
-                                <p class="contacts__text">+7 987 654-54-56</p>
-                                <p class="contacts__text">+38 067 504-32-57</p>
+                                <a class="contacts__text" href="tel:79876545456">+7 987 654-54-56</a>
+                                <br>
+                                <a class="contacts__text" href="tel:380675043257">+38 067 504-32-57</a>
                             </li>
 
                             <li class="contacts__item">

@@ -39,11 +39,12 @@
 
     &__title {
         margin-bottom: 55px;
+        line-height: 87px;
 
     }
 
     &__subtitle {
-
+        line-height: 57px;
         font-size: 42px;
         font-weight: 400;
         margin-bottom: 110px;
@@ -75,7 +76,7 @@
         margin-bottom: 15px;
     }
 
-    &__img{
+    &__img {
         object-fit: cover;
         //для того чтоб изображение не тянулось при увеличении текста из за флекса
     }
@@ -85,7 +86,7 @@
     &__inner {
         display: flex;
         justify-content: space-between;
-        
+
     }
 
     &__content {
@@ -95,7 +96,7 @@
 
     &__tab {
         margin-bottom: 100px;
-        &-items{
+        &-items {
             display: flex;
             margin-bottom: 125px;
         }
@@ -106,7 +107,7 @@
             font-size: 18px;
             line-height: 25px;
 
-            &--active{
+            &--active {
                 border-bottom: 1px solid $black-color;
             }
 
@@ -115,33 +116,29 @@
             }
         }
 
-        &-content{
+        &-content {
             display: none;
 
-            &--active{
+            &--active {
                 display: block;
             }
         }
 
-        
     }
 
-
-    &__slider{
+    &__slider {
         max-width: 510px;
-        &-img{
+        &-img {
             margin-right: 40px;
             float: left;
-            
+
         }
 
-        &-text{
+        &-text {
             padding-bottom: 15px;
         }
 
-    
     }
-
 
     &__benefits {
         display: flex;
@@ -192,13 +189,9 @@
 }
 
 .clients {
-    &__inner {
-        display: flex;
-
-    }
-
     &__img {
         width: 510px;
+        margin-bottom: 30px;
     }
 
     &__block {
@@ -226,6 +219,10 @@
 
     &__btn {
         margin-left: 50px;
+    }
+
+    &__carousel {
+        display: flex;
     }
 }
 
@@ -264,6 +261,10 @@
             font-weight: 400;
             text-transform: uppercase;
             color: $gray-color;
+        }
+
+        &:nth-child(n+10)::before {
+            content: counter(MyCounter);
         }
 
         &-title {
@@ -308,11 +309,13 @@
 
     &__input {
         display: block;
-        background-color: rgba(0,0,0,0);
+        background: transparent;
         border: none;
         border-bottom: 1px solid $white-color;
         width: 510px;
         height: 30px;
+        padding: 5px 10px;
+        color: $white-color;
         &::placeholder {
             font-family: "Noto Sans";
             font-weight: 400;
@@ -330,6 +333,10 @@
     &__btn {
         margin-top: 60px;
         margin-left: 50px;
+
+        background: transparent;
+        border: none;
+        cursor: pointer;
     }
 
     &__content {
@@ -360,6 +367,8 @@
         font-weight: 400;
         font-family: "Noto Sans";
     }
+
+   
 
 }
 

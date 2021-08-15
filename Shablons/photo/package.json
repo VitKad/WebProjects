@@ -19,10 +19,10 @@
     "gulp-sass": "^4.1.0",
     "gulp-uglify-es": "^2.0.0",
     "jquery": "^3.6.0",
+    "magnific-popup": "^1.1.0",
     "normalize.css": "^8.0.1"
   },
   "dependencies": {
-    "magnific-popup": "^1.1.0",
     "slick-carousel": "^1.8.1"
   }
 }

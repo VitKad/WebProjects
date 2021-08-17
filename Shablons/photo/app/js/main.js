@@ -25,12 +25,12 @@ $(function () {
 
     //$('.popup-link').magnificPopup();
 
+
+
+
+
+
     
-
-
-
-
-
     $('.popup-link').magnificPopup({
         callbacks: {
             open: function () {
@@ -57,11 +57,21 @@ $(function () {
                             '5c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"/>'
                 });
 
+
+            },
+            close: function(){
+                $('.popup-slider').slick('refresh');
             }
 
           
 
         }
     });
+
+
+
+    
+
+
 
 });

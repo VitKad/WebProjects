@@ -58,17 +58,17 @@
         align-items: center;
 
         &-item {
-           position: relative;
-            
+            position: relative;
+
         }
 
-        &-link{
-            transition: all .5s;
+        &-link {
+            transition: all 0.5s;
             font-weight: 400;
             padding: 15px 0 14px;
-            
-            &::before{
-                content:"";
+
+            &::before {
+                content: "";
                 position: absolute;
                 right: auto;
                 left: 0;
@@ -76,19 +76,16 @@
                 width: 0;
                 background-color: #1C62CD;
                 height: 3px;
-                transition: all .3s;
+                transition: all 0.3s;
             }
 
-            &:hover::before{
-              width: 100%;
-              left: auto;
-              right: 0;
-              
+            &:hover::before {
+                width: 100%;
+                left: auto;
+                right: 0;
+
             }
 
-            &:hover{
-                color: #1C62CD;
-            }
         }
 
     }
@@ -110,17 +107,17 @@
         line-height: 24px;
         color: #2F3035;
         padding-bottom: 3px;
-       
-        transition: all 0.5s;
+
+        border-bottom: 3px rgba(0,0,0,0) solid;
+        border-radius: 1px;
+        transition: all 0.3s;
         &:hover {
-            border-bottom: 1px black solid;
+            border-bottom: 2px rgba(0,0,0,1) solid;
         }
-      
-           
-        
     }
 
-   
+    
+
 }
 
 .user-box {
@@ -130,5 +127,7 @@
     }
     // display: flex;
 }
+
+
 
 @import "media"

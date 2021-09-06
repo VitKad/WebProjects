@@ -1,0 +1,134 @@
+
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    &__top {
+        //min-height: 115px;
+
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 0 20px;
+        }
+    }
+
+    &__info-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__address {
+        font-family: "SFProDisplay-Bold" , serif;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+        margin-right: 65px;
+        width: 280px;
+        color: #2F3035;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            background-image: url("../img/header/address.svg");
+            position: absolute;
+            top: -11px;
+            left: -28px;
+        }
+    }
+
+    &__categories {
+
+        display: flex;
+        justify-content: space-around;
+        background: #F0F0F4;
+        min-height: 53px;
+        align-items: center;
+
+        &-item {
+           position: relative;
+            
+        }
+
+        &-link{
+            transition: all .5s;
+            font-weight: 400;
+            padding: 15px 0 14px;
+            
+            &::before{
+                content:"";
+                position: absolute;
+                right: auto;
+                left: 0;
+                bottom: -17px;
+                width: 0;
+                background-color: #1C62CD;
+                height: 3px;
+                transition: all .3s;
+            }
+
+            &:hover::before{
+              width: 100%;
+              left: auto;
+              right: 0;
+              
+            }
+
+            &:hover{
+                color: #1C62CD;
+            }
+        }
+
+    }
+
+}
+
+.menu {
+
+    &__item+&__item {
+        margin-left: 50px;
+    }
+    &__item {
+        display: inline-block;
+    }
+    &__link {
+        font-family: "SFProDisplay-Bold" , serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #2F3035;
+        padding-bottom: 3px;
+       
+        transition: all 0.5s;
+        &:hover {
+            border-bottom: 1px black solid;
+        }
+      
+           
+        
+    }
+
+   
+}
+
+.user-box {
+    &__item {
+        display: inline-block;
+        margin-right: 8px;
+    }
+    // display: flex;
+}
+
+@import "media"

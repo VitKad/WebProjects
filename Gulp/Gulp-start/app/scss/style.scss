@@ -1,29 +1,9 @@
-@import "../../node_modules/normalize.css/normalize";
-//@import "../../node_modules/slick-carousel/slick/slick";
-//@import "../../node_modules/magnific-popup/dist/magnific-popup";
 
-@import "vars"
-@import "libs"
-@import "fonts"
-@import "global"
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
 
-
-*,
-*::after,
-*::before{
-    box-sizing:border-box;
-}
-
-p,
-a,
-h1,h2,h3,h4,h5,h6{
-    margin: 0;
-    padding: 0;
-}
-
-a{
-    text-decoration: none;
-}
 
 
 @import "media"

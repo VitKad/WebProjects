@@ -26,7 +26,8 @@ $(function () {
     //$('.popup-link').magnificPopup();
 
 
-
+  
+   
 
 
 
@@ -34,7 +35,11 @@ $(function () {
     $('.popup-link').magnificPopup({
         callbacks: {
             open: function () {
-                $('.popup-slider').slick({
+                $('.popup-slider').click(function() {
+                    $(this).slick('reinit');
+                 });
+             
+                var slick = $('.popup-slider').slick({
                     infinite: true,
                     fade: true,
                     autoplay: true,
@@ -57,10 +62,17 @@ $(function () {
                             '5c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"/>'
                 });
 
+             
+
+
+
 
             },
+
+            
             close: function(){
-                $('.popup-slider').slick('refresh');
+                $('.popup-slider').slick('reinit');
+               // $('.popup-slider').slick('refresh');
             }
 
           
@@ -68,6 +80,7 @@ $(function () {
         }
     });
 
+   // $('.popup-slider').slick('reinit');
 
     $('.reviews__slider').slick({
         arrows:false,

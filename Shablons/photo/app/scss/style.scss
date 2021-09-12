@@ -1,5 +1,5 @@
+@import "../../node_modules/slick-carousel/slick/slick";
 @import "../../node_modules/normalize.css/normalize";
-@import "../../node_modules/slick-carousel/slick/slick.css";
 @import "../../node_modules/magnific-popup/dist/magnific-popup";
 
 @import "vars";
@@ -181,20 +181,23 @@ body {
 .about {
     &__block {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         padding-bottom: 20px;
+        height: 450px;
+        
     }
 
     &__title {}
 
     &__img {
-        width: 500px;
-        border-bottom: 4px black solid;
+        width: auto;
         border-radius: 20px;
+        margin-left: 60px;
+       
     }
 
     &__content {
-        width: 600px;
+        width: 550px;
 
         &-title {
             margin-bottom: 30px;
@@ -204,6 +207,7 @@ body {
         &-text {
             margin-bottom: 15px;
             font-size: 18px;
+            text-align: justify;
         }
     }
 
@@ -341,6 +345,24 @@ body {
 
 }
 
+.slick-left-popup{
+    position: absolute;
+    left: -70px;
+    bottom: 50%;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+
+.slick-right-popup{
+    position: absolute;
+    right: -70px;
+    bottom: 50%;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+
 
 
 .slick-dots {
@@ -469,7 +491,11 @@ body {
     }
 }
 
-
+.popup button{
+    font-size: 0;
+    width: 0;
+    height: 0;
+}
 
 
 

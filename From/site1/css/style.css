@@ -1,0 +1,148 @@
+.container {
+  margin: 0 auto;
+  max-width: 1190px;
+  padding: 0 10px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #373A39;
+  min-height: 100vh;
+}
+
+.title{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 75px;
+  letter-spacing: -1.65px;
+  color: #242121;
+  position: relative;
+  align-self: flex-start;
+  padding-bottom: 18px;
+}
+
+.title::after{
+  content:"";
+  width: 60px;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #FCBB08;
+}
+
+
+
+/* font-family: 'Merriweather', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+.header__top {
+  background-color: #fff;
+}
+
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1px 0 29px;
+}
+
+.menu__list {
+  display: flex;
+
+}
+
+.menu {
+  margin-bottom: 8px;
+}
+
+.menu__link {
+  padding: 0 6px 9px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 14px;
+  letter-spacing: 0.6px;
+  color: #373A39;
+  text-decoration: none;
+  transition: all .5s;
+}
+
+.menu__link:hover {
+  border-bottom: 1px solid #fcbb08;
+}
+
+
+.menu__item+.menu__item {
+  margin-left: 32px;
+}
+
+.header__content {
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+
+
+.header__content-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: calc(100vh - 94px);
+}
+
+.header__title {
+  margin-top: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 88px;
+  color: #fff;
+  margin-bottom: 19px;
+  padding-top: 250px;
+}
+
+.header__subtitle {
+  margin-bottom: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 2.74286px;
+  color: #fcbb08;
+}
+
+.header__scroll {
+  margin-bottom: 62px;
+}
+
+.about{
+  background: #F6F8FA;
+}
+
+.about__inner {
+ 
+  padding: 152px 0 159px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.text {
+  width: 770px;
+}
+
+
+.text p {
+  margin-bottom: 10px;
+}

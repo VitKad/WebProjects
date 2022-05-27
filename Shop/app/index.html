@@ -5,13 +5,21 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Raleway:wght@700&display=swap"
+            rel="stylesheet">
         <link rel="stylesheet" href="css/style.min.css">
         <title>Document</title>
     </head>
 
     <body>
 
-        <header class="header">
+        <header class="header page-section">
             <div class="header__top">
                 <div class="container">
                     <div class="header__top-inner">
@@ -32,16 +40,16 @@
                         </a>
 
                         <div class="header__info-block">
-                            <a class="header__address">Москва,  ул. Науки  25</a>
+                            <a class="header__address">Москва, ул. Науки 25</a>
                             <ul class="user-box">
                                 <li class="user-box__item">
-                                    <a  class="user-box__link" href="#">
-                                        <img class="user-box__img" src="img/header/favorite.svg" alt="" >
+                                    <a class="user-box__link" href="#">
+                                        <img class="user-box__img" src="img/header/favorite.svg" alt="">
                                     </a>
                                 </li>
                                 <li class="user-box__item">
                                     <a class="user-box__link" href="#">
-                                        <img class="user-box__img" src="img/header/user.svg" alt="" >
+                                        <img class="user-box__img" src="img/header/user.svg" alt="">
                                     </a>
                                 </li>
                                 <li class="user-box__item">
@@ -56,38 +64,76 @@
                 </div>
             </div>
 
-
             <div class="header__bottom">
                 <div class="container">
-                        <ul class="header__categories">
-                            <li class="header__categories-item">
-                                <a class="header__categories-link" href="#">Квадроциклы</a>
-                            </li>
-                            <li class="header__categories-item">
-                                <a class="header__categories-link" href="#">Катера</a>
-                            </li>
-                            <li class="header__categories-item">
-                                <a class="header__categories-link" href="#">Гидроциклы</a>
-                            </li>
-                            <li class="header__categories-item">
-                                <a class="header__categories-link" href="#">Лодки</a>
-                            </li>
-                            <li class="header__categories-item">
-                                <a class="header__categories-link" href="#">Вездеходы</a>
-                            </li>
-                            <li class="header__categories-item">
-                                <a class="header__categories-link" href="#">Снегоходы</a>
-                            </li>
-                            <li class="header__categories-item">
-                                <a class="header__categories-link" href="#">Двигатели</a>
-                            </li>
-                            <li class="header__categories-item">
-                                <a class="header__categories-link" href="#">Запчасти</a>
-                            </li>
-                        </ul>
+                    <ul class="header__categories">
+                        <li class="header__categories-item">
+                            <a class="header__categories-link" href="#">Квадроциклы</a>
+                        </li>
+                        <li class="header__categories-item">
+                            <a class="header__categories-link" href="#">Катера</a>
+                        </li>
+                        <li class="header__categories-item">
+                            <a class="header__categories-link" href="#">Гидроциклы</a>
+                        </li>
+                        <li class="header__categories-item">
+                            <a class="header__categories-link" href="#">Лодки</a>
+                        </li>
+                        <li class="header__categories-item">
+                            <a class="header__categories-link" href="#">Вездеходы</a>
+                        </li>
+                        <li class="header__categories-item">
+                            <a class="header__categories-link" href="#">Снегоходы</a>
+                        </li>
+                        <li class="header__categories-item">
+                            <a class="header__categories-link" href="#">Двигатели</a>
+                        </li>
+                        <li class="header__categories-item">
+                            <a class="header__categories-link" href="#">Запчасти</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </header>
+
+        <section class="promo page-section">
+            <div class="container">
+                <div class="promo__inner">
+                    <div class="promo__banner ">
+                        <div class="promo__slider slider">
+                            <a class="promo__slider-link" href="">
+                                <img class="promo__slider-img" src="img/promo/slider-img1.jpg" alt="">
+                            </a>
+                            <a class="promo__slider-link" href="">
+                                <img class="promo__slider-img" src="img/promo/slider-img1.jpg" alt="">
+                            </a>
+                            <a class="promo__slider-link" href="">
+                                <img class="promo__slider-img" src="img/promo/slider-img1.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="promo__product">
+                        <div class="promo__product-top">
+                            <div class="promo__product-mark">АКЦИЯ</div>
+                            <p class="promo__product-price">
+                                190 000 ₽
+                                <span class="promo__product-oldprice">
+                                    225 000 ₽
+                                </span>
+                            </p>
+                        </div>
+                        <div class="promo__product-content">
+                            <img class="promo__product-img" src="img/promo/product-img.jpg" alt="">
+                            <h5 class="promo__product-name">Лодочный мотор Suzuki DF9.9BRS</h5>
+                        </div>
+                        <div class="promo__product-bottom">
+                            <p class="promo__product-text">Акция действует до
+                                <span>31.08.2020</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <script src="js/main.min.js"></script>
     </body>

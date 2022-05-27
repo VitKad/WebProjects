@@ -33,12 +33,16 @@ $(function () {
 
     
     $('.popup-link').magnificPopup({
+     
+    
         callbacks: {
+           
+            
             open: function () {
-                $('.popup-slider').click(function() {
+               /* $('.popup-slider').click(function() {
                     $(this).slick('reinit');
                  });
-             
+             */
                 var slick = $('.popup-slider').slick({
                     infinite: true,
                     fade: true,
@@ -68,11 +72,16 @@ $(function () {
 
 
             },
+/*
+            afterClose: function() {
+                $('.popup-slider').click(function() {
+                    $(this).slick('reinit');
+                 });
 
+            },*/
             
             close: function(){
                 $('.popup-slider').slick('reinit');
-               // $('.popup-slider').slick('refresh');
             }
 
           

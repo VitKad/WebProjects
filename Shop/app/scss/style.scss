@@ -116,8 +116,6 @@
         }
     }
 
-    
-
 }
 
 .user-box {
@@ -128,6 +126,141 @@
     // display: flex;
 }
 
+.slider__arrow-left {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-45%);
+    cursor: pointer;
+    z-index: 1001;
 
+}
+
+.slider__arrow-right {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-45%);
+    cursor: pointer;
+    z-index: 1000;
+
+}
+
+
+.promo {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__banner {
+        width: 870px;
+    }
+
+    &__slider{
+        position: relative;
+       
+        
+    }
+
+    &__product {
+        border: 1px solid #CDCDCD;
+
+        border-radius: 3px;
+        width: 265px;
+        height: 397px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &-top {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-mark {
+            padding: 9px 20px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 15px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            display: inline-block;
+            background-color: #1C62CD;
+        }
+
+        &-price {
+            font-family: 'Barlow', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 27px;
+            line-height: 32px;
+
+            margin-right: 8px;
+            color: #1C62CD;
+
+            position: relative;
+        }
+
+        &-oldprice {
+            position: absolute;
+            right: 1px;
+            top: 32px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+
+            color: #C4C4C4;
+
+            &::before{
+                content:"";
+                position: absolute;
+                left: -7px;
+                top: 0;
+                background-image: url(../img/promo/line.svg);
+                width: 62px;
+                height: 17px;
+            }
+        }
+
+        &-content {
+            text-align: center;
+            padding: 0 55px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+
+            color: #2F3035;
+        }
+
+        &-img {
+            margin-right: 30px;
+        }
+
+        &-bottom {
+            background: #F0F0F4;
+            text-align: center;
+            padding: 25px 50px;
+
+        }
+
+        &-text {
+            
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            span {
+                font-family: 'Barlow', sans-serif;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 22px;
+
+                color: #1C62CD;
+            }
+        }
+
+    }
+}
 
 @import "media"

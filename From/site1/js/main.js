@@ -1,6 +1,5 @@
 $(function(){
   
-  var mixer = mixitup('.portfolio__content');
 
   $('.slider-blog__inner').slick({
    dots:true,
@@ -8,4 +7,14 @@ $(function(){
    nextArrow:'<button type="button" class="slick-next"><img src="images/next-arrow.svg" alt="next"></button>'
   });
     
+
+  $('.menu__btn').on('click', function(){
+    $('.menu').toggleClass('menu--active');
+  });
+
+
+  var mixer = mixitup('.portfolio__content');
+
+
+
 });

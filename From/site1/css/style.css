@@ -696,7 +696,7 @@ ul.footer__social {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 692px;
+ max-width: 692px;
 
 }
 
@@ -755,6 +755,32 @@ ul.footer__social {
     padding: 40px 0 90px;
   }
 
+  .slick-prev {
+    left: 5px;
+  }
+
+  .slick-next {
+    right: 5px;
+  }
+
+  .slider-blog__item {
+    padding: 75px 80px;
+  }
+
+  ul.slick-dots {
+    padding-left: 80px;
+  }
+
+  .team__inner,
+  .pricing__inner,
+  .clients__item {
+    column-gap: 20px;
+  }
+
+  .communication__inner {
+    padding: 60px 0 90px;
+}
+
 }
 
 
@@ -774,8 +800,13 @@ ul.footer__social {
     max-width: 100%;
   }
 
-  .expertise {
-    padding: 85px 0 100px;
+  .expertise,
+  .portfolio,
+  .slider-blog,
+  .team,
+  .pricing,
+  .communication {
+    padding: 75px 0;
   }
 
   .expertise__items {
@@ -795,6 +826,36 @@ ul.footer__social {
 
   .magic__inner {
     padding: 40px 0 90px 20px;
+  }
+
+  .portfolio__nav {
+    margin-right: 0;
+  }
+
+  .portfolio__top {
+
+    margin-bottom: 50px;
+  }
+
+  .portfolio__numbers {
+    margin-bottom: 100px;
+  }
+
+  .clients__item{
+
+    margin: 0 5px 25px;
+  }
+
+  .communication__inner {
+    padding: 30px 0 30px;
+}
+
+  .communication__form {
+    max-width: 430px;
+}
+
+.footer__top {
+  padding: 60px 10px 50px;
 }
 }
 
@@ -816,15 +877,50 @@ ul.footer__social {
   }
 
   .magic {
-    background-image:none;
-}
+    background-image: none;
+  }
 
-.magic__inner {
+  .magic__inner {
     max-width: 100%;
     margin-left: auto;
     padding: 60px 0 70px;
-}
+  }
 
+  .portfolio__top {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .portfolio__content {
+    column-count: 3;
+    column-gap: 15px;
+    margin-bottom: 50px;
+  }
+
+  .portfolio__item {
+    margin-bottom: 16px;
+  }
+
+  .slider-blog__title {
+    font-size: 30px;
+  }
+
+  .communication{
+    background-image: none;
+  }
+  
+  .communication__form{
+    max-width: 100%;
+  }
+  ul.footer__social {
+    margin: 50px auto 40px;
+    flex-wrap:wrap;
+  }
+
+  .footer__social li{
+    width: 33.33333%;
+    margin-bottom: 30px;
+  }
 }
 
 
@@ -843,7 +939,7 @@ ul.footer__social {
     transition: all .7s;
     z-index: -1;
     opacity: 0;
-    border-radius: 0 0 40% 40%;
+    border-radius: 0 0 50% 50%;
 
   }
 
@@ -916,9 +1012,128 @@ ul.footer__social {
   .magic__text p {
     color: #373A39;
     margin-bottom: 15px;
+  }
+
+
+
+  .portfolio__item {
+    margin-bottom: 16px;
+  }
+
+  .portfolio__nav-item {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .portfolio__blockquote {
+    padding: 0 10px;
+  }
+
+  .portfolio__add {
+    margin-bottom: 80px;
+  }
+
+  .portfolio__blockquote span {
+    margin-bottom: 60px;
+  }
+
+  .portfolio__video {
+    margin-bottom: 90px;
+  }
+
+  .portfolio__numbers {
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  .portfolio__numbers-item {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+
+  .slider-blog__item {
+    padding: 75px 0;
+  }
+
+  ul.slick-dots {
+    padding-left: 0;
+  }
+
+  .slider-blog__title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .slider-blog__item {
+    padding: 35px 0;
+  }
+
+  .pricing__inner{
+    display: block;
+  }
+
+  .pricing__item {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto 30px;
+}
+
+ul.clients__list {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.clients__item{
+  margin-bottom: 25px;
 }
 
 }
+
+
+
+
+
+@media(max-width:700px) {
+  .portfolio__content {
+    column-count: 2;
+    column-gap: 25px;
+    margin-bottom: 50px;
+  }
+
+  .portfolio__item {
+    margin-bottom: 25px;
+  }
+
+  .team__inner {
+    display: block;
+  }
+
+  .team__item {
+    margin-bottom: 30px;
+  }
+
+  .team__item img {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .team__item {
+    margin-bottom: 30px;
+  }
+
+  .team__name {
+    margin: 0px 0 12px;
+}
+
+.footer__social li{
+  width: 50%;
+}
+}
+
+
+
+
 
 @media(max-width:440px) {
   .header__title {
@@ -936,4 +1151,24 @@ ul.footer__social {
     padding-top: 60px;
   }
 
+  .portfolio__content {
+    column-gap: 13px;
+  }
+
+  .portfolio__item {
+    margin-bottom: 14px;
+  }
+
+  .portfolio__item-link {
+    font-size: 10px;
+  }
+
+  .portfolio__numbers-item {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .footer__social-link {
+    font-size: 11px;
+  }
 }

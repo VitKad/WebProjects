@@ -521,9 +521,80 @@ font-family: 'Raleway', sans-serif; */
   color: #333333;
 }
 
-.team__text{
+.team__text {
   color: #373A39;
   text-align: center;
   font-size: 12px;
   line-height: 16px;
+}
+
+.pricing {
+  padding: 145px 0 160px;
+  background-color: #F6F8FA;
+}
+
+.pricing__title {
+  margin-bottom: 90px;
+}
+
+.pricing__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pricing__item {
+  width: 370px;
+  background-color: #fff;
+  padding: 24px 25px 53px;
+}
+
+.pricing__list {
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #242121;
+}
+
+.pricing__list-name {
+  text-align: left;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.pricing__list-cost {
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 109px;
+  margin-bottom: 50px;
+}
+
+.pricing__list-cost sup{
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 54px;
+}
+
+.pricing__list-desc {
+  margin-bottom: 30px;
+}
+
+.pricing__list-more{
+
+  margin-top: 70px;
+}
+
+.pricing__list-link {
+  
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  font-family: 'Montserrat', sans-serif;
+
+  letter-spacing: 1.2px;
+
+  color: #242121;
+
 }

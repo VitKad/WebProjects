@@ -1,5 +1,20 @@
 $(function(){
   
+  $('.menu a, .go-top, .logo').on('click', function(e){
+    e.preventDefault();
+    var id = $(this).attr('href'),
+    top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top}, 1500);
+  });
+
+  $('.header__scroll').on('click', function(e){
+    e.preventDefault();
+    var id = $(this).attr('href'),
+    top = $(id).offset().top;
+    $('body,html').animate({ scrollTop: top}, 20000);
+  });
+
+
 
   $('.slider-blog__inner').slick({
    dots:true,
@@ -16,7 +31,7 @@ $(function(){
   });
     
 
-  $('.menu__btn').on('click', function(){
+  $('.menu__btn, .menu__link').on('click', function(){
     $('.menu').toggleClass('menu--active');
   });
 

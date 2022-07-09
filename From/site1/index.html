@@ -18,12 +18,12 @@
   <title>Document</title>
 </head>
 
-<body>
+<body id="body">
   <header class="header">
-    <div class="header__top">
+    < т class="header__top">
       <div class="container">
         <div class="header__top-inner">
-          <a class="logo" href="#">
+          <a class="logo" href="#body">
             <img class="logo__img" src="images/logo.svg" alt="logo">
           </a>
           <button class="menu__btn"><img src="images/menu-btn.svg" alt="menu" class="menu__btn-img"></button>
@@ -31,32 +31,32 @@
             <ul class="menu__list">
 
               <li class="menu__item">
-                <a href="#" class="menu__link">
+                <a href="#body" class="menu__link">
                   HOME
                 </a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">
+                <a href="#about" class="menu__link">
                   ABOUT US
                 </a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">
+                <a href="#portfolio" class="menu__link">
                   PORTFOLIO
                 </a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">
-                  OUR TEAM
-                </a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">
+                <a href="#blog" class="menu__link">
                   BLOG
                 </a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link">
+                <a href="#team" class="menu__link">
+                  OUR TEAM
+                </a>
+              </li>
+              <li class="menu__item">
+                <a href="#contact" class="menu__link">
                   CONTACT
                 </a>
               </li>
@@ -74,7 +74,7 @@
           <p class="header__subtitle">
             DIGITAL MARKETING AGENCY
           </p>
-          <a class="header__scroll" href="#">
+          <a class="header__scroll" href="#footer">
             <img class="header__scroll-img" src="images/scroll.svg" alt="mouse">
           </a>
         </div>
@@ -82,7 +82,7 @@
     </div>
   </header>
 
-  <section class="about">
+  <section class="about" id="about">
     <div class="container">
       <div class="about__inner">
         <h2 class="title about__title">About Us</h2>
@@ -202,7 +202,7 @@
   </section>
 
 
-  <section class="portfolio">
+  <section class="portfolio" id="portfolio">
     <div class="container">
       <div class="portfolio__top">
         <h4 class="portfolio__title title">
@@ -317,7 +317,7 @@
   </section>
 
 
-  <section class="slider-blog">
+  <section class="slider-blog" id="blog">
     <div class="container">
       <div class="slider-blog__inner">
 
@@ -404,7 +404,7 @@
     </div>
   </section>
 
-  <section class="team">
+  <section class="team" id="team">
     <div class="container">
       <h2 class="title team__title">Our Team</h2>
       <div class="team__inner">
@@ -522,7 +522,7 @@
     </div>
   </div>
 
-  <section class="communication">
+  <section class="communication" id="contact">
     <div class="container">
       <div class="communication__inner">
         <h2 class="title communication__title">
@@ -539,7 +539,7 @@
   </section>
 
 
-  <footer class="footer">
+  <footer class="footer" id="footer">
 
     <div class="footer__top">
       <div class="container">
@@ -559,12 +559,12 @@
             <adress class="adress">
               Украина, Харьков ул. Тобольская, 63
             </adress>
-            <a href="tel:+3806765252222" class="phone">(38067) 65 252 222</a>  
-            <a href="mailto:info@mail.com" class="email">info@mail.com</a>  
-           
+            <a href="tel:+3806765252222" class="phone">(38067) 65 252 222</a>
+            <a href="mailto:info@mail.com" class="email">info@mail.com</a>
+
           </div>
-         
-          <a class="go-top" href="#">
+
+          <a class="go-top" href="#body">
             <img class="footer__scroll-img" src="images/footer-scroll.svg" alt="mouse">
           </a>
         </div>
@@ -576,7 +576,7 @@
     </div>
 
   </footer>
- 
+
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

@@ -1,4 +1,4 @@
-const {src , dest, watch, parallel, series} = require('gulp'),
+  const {src , dest, watch, parallel, series} = require('gulp'),
     scss = require('gulp-sass'),
     browserSync = require('browser-sync').create(),
     concat = require('gulp-concat'),
@@ -9,7 +9,7 @@ const {src , dest, watch, parallel, series} = require('gulp'),
     del = require('del');
 
     function styles(){
-        return src('app/scss/**/*.scss')
+        return src('app/scss/style.scss')
         .pipe(scss({outputStyle: 'compressed'}))
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({

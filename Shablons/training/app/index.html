@@ -12,6 +12,7 @@
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -230,7 +231,7 @@
         </div>
       </div>
     </div>
-    <img class="motivate__img" src="img/motivate.jpg" alt="motivate">
+    <!--     <img class="motivate__img" src="img/motivate.jpg" alt="motivate"> -->
   </section>
 
 
@@ -241,52 +242,62 @@
       </h2>
       <div class="gallery__inner">
 
-        <div class="gallety__filter">
+        <div class="gallery__filter">
           <ul class="gallery__list">
             <li class="gallery__item">
-              <a class="gallery__link" href="">ВСЕ</a>
+              <button class="gallery__link" data-filter="all">ВСЕ</button>
             </li>
             <li class="gallery__item">
-              <a class="gallery__link" href="">ТУРИСТЫ</a>
+              <button class="gallery__link" data-filter=".category-a">ТУРИСТЫ</button>
             </li>
             <li class="gallery__item">
-              <a class="gallery__link" href="">ПРИРОДА</a>
+              <button class="gallery__link" data-filter=".category-b">ПРИРОДА</button>
             </li>
             <li class="gallery__item">
-              <a class="gallery__link" href="">ПРОФИ</a>
+              <button class="gallery__link" data-filter=".category-c">ПРОФИ</button>
             </li>
           </ul>
         </div>
 
         <div class="gallery__content">
 
-          <a class="gallery__content-link" href="">
-            <img src="img/gallery/1.jpg" alt="" class="gallery__content-img">
-          </a>
-          <a class="gallery__content-link" href="">
-            <img src="img/gallery/2.jpg" alt="" class="gallery__content-img">
-          </a>
-          <a class="gallery__content-link" href="">
-            <img src="img/gallery/3.jpg" alt="" class="gallery__content-img">
-          </a>
-          <a class="gallery__content-link" href="">
-            <img src="img/gallery/4.jpg" alt="" class="gallery__content-img">
-          </a>
-          <a class="gallery__content-link" href="">
-            <img src="img/gallery/5.jpg" alt="" class="gallery__content-img">
-          </a>
-          <a class="gallery__content-link" href="">
-            <img src="img/gallery/6.jpg" alt="" class="gallery__content-img">
-          </a>
+          <div class="gallery__content-item mix category-a"> <img src="img/gallery/1.jpg" alt="" class="gallery__content-img">
+            <a class="gallery__content-link" href="">
+            </a>
+          </div>
+
+          <div class="gallery__content-item mix category-a"> <img src="img/gallery/2.jpg" alt="" class="gallery__content-img"><a
+              class="gallery__content-link" href="">
+
+            </a></div>
+          <div class="gallery__content-item mix category-b"> <img src="img/gallery/3.jpg" alt="" class="gallery__content-img"><a
+              class="gallery__content-link" href="">
+
+            </a></div>
+          <div class="gallery__content-item mix category-b"> <img src="img/gallery/4.jpg" alt="" class="gallery__content-img"><a
+              class="gallery__content-link" href="">
+
+            </a></div>
+          <div class="gallery__content-item mix category-c"> <img src="img/gallery/5.jpg" alt="" class="gallery__content-img"><a
+              class="gallery__content-link" href="">
+
+            </a></div>
+          <div class="gallery__content-item mix category-c"> <img src="img/gallery/6.jpg" alt="" class="gallery__content-img"><a
+              class="gallery__content-link" href="">
+
+            </a></div>
 
         </div>
 
-        <a class="gallery__more" href="#">ПОКАЗАТЬ ЕЩЕ</a>
+          <a class="gallery__more" href="#">ПОКАЗАТЬ ЕЩЕ</a>
+
+
 
       </div>
     </div>
   </section>
-
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script src="js/mixitup.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 

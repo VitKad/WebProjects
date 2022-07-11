@@ -602,13 +602,13 @@ body {
     background-color: #fff;
     width: 360px;
     height: 577px;
-  
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  &__list{
+  &__list {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -651,6 +651,145 @@ body {
   }
 }
 
+.map {
+  padding-top: 200px;
+  text-align: center;
+}
 
+.connection {
+  padding: 200px 0;
+
+  &__title {
+    margin-bottom: 250px;
+    text-align: center;
+  }
+
+  &__inner {
+    display: flex;
+    margin-bottom: 200px;
+
+  }
+
+  &__form {
+    max-width: 570px;
+    width: 100%;
+    height: 460px;
+  }
+
+  &__form-text,
+  &__form-textarea {
+    width: 100%;
+    display: block;
+    border: none;
+    background-color: inherit;
+    border-bottom: 2px solid #DADADA;
+    padding: 18px 5px;
+    margin-bottom: 14px;
+    font-weight: 400;
+    font-size: 18px;
+
+
+    &::placeholder {
+      font-family: $Rob;
+
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 18px;
+      letter-spacing: 0.6px;
+      color: #00B2A0;
+      max-width: 260px;
+
+
+    }
+
+
+  }
+
+  &__form-textarea {
+    min-height: 156px;
+    resize: none;
+  }
+
+  &__form-btn {
+    padding: 24px 111px;
+    background-color: #fff;
+    border: 1px solid #C4C4C4;
+    font-family: $Rob;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    color: #242121;
+    margin-top: 74px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(248, 248, 248);
+    }
+
+
+  }
+
+  &__contacts {
+    width: 50%;
+    margin-left: auto;
+    padding: 49px 0 0 52px;
+    height: 460px;
+    background: #F8F8F8;
+  }
+
+  &__contacts-text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    max-width: 330px;
+
+  }
+
+  &__contacts-text+.connection__contacts-text {
+    margin-top: 65px;
+  }
+
+
+
+
+
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+
+  &__link+.social__link {
+    margin-left: 15px;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 18px;
+    letter-spacing: 0.6px;
+    color: #242121;
+    transition: all .5s;
+
+    &:hover{
+      color: #00B2A0;
+    }
+  }
+
+
+}
+
+
+.footer{
+  padding: 68px 0;
+  background: #00B2A0;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+
+  &__logo{
+    position:static;
+  }
+}
 
 @import "media"

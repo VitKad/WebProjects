@@ -487,7 +487,6 @@ body {
 
   }
 
-  &__description {}
 
 }
 
@@ -536,11 +535,10 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  bottom:80px
-
+  bottom: 80px
 }
 
-.slick-dots button{
+.slick-dots button {
   border: none;
   background-color: #fff;
   font-size: 0;
@@ -551,8 +549,106 @@ body {
 
 }
 
-.slick-active button{
+.slick-active button {
   background: #00B2A0;
+}
+
+.team {
+  padding: 200px 0;
+
+  &__title {
+    margin-bottom: 210px;
+    text-align: center;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 330px;
+    text-align: center;
+  }
+
+  &__img {
+    margin-bottom: 25px;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 5px;
+  }
+}
+
+.rate {
+  padding: 200px 0;
+  background: #F8F8F8;
+
+  &__title {
+    margin-bottom: 200px;
+    text-align: center;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    padding: 45px 30px;
+    background-color: #fff;
+    width: 360px;
+    height: 577px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__list{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    color: #01353E;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  &__enum {
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  &__price {
+    margin-top: auto;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    color: #01353E;
+    text-align: center;
+    position: relative;
+    display: block;
+
+    span {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 10px;
+      position: absolute;
+      top: 9px;
+      margin-left: 5px;
+    }
+  }
 }
 
 

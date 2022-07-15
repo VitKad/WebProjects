@@ -79,14 +79,15 @@
 }
 
 
-.footer{
+.footer {
   background-color: $bg;
-  &__logo{
+
+  &__logo {
     margin-bottom: 34px;
     display: block;
   }
 
-  &__copy{
+  &__copy {
     display: flex;
     justify-content: space-between;
     padding: 14px 0;
@@ -95,53 +96,56 @@
     height: 75px;
   }
 
-  &__copy-accept{
+  &__copy-accept {
     margin-right: 20px;
     line-height: inherit;
     display: inline-block;
   }
 
-  &__copy-img{
+  &__copy-img {
     display: inline-block;
     vertical-align: middle;
   }
-  &__copy-img+.footer__copy-img{
+
+  &__copy-img+.footer__copy-img {
     margin-left: 20px;
   }
 }
 
-.footer-top{
+.footer-top {
   padding: 60px 0 40px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #ececec;
 
-  &__info{
+  &__info {
     max-width: 250px;
     width: 100%;
     margin-right: 50px;
-    
+
   }
 
-  &__info-address{
+  &__info-address {
     font-style: normal;
   }
 
-  &__info-contacts{
-    margin-bottom: 35px;  
+  &__info-contacts {
+    margin-bottom: 35px;
   }
-  &__info-item+.footer-top__info-item{
+
+  &__info-item+.footer-top__info-item {
     margin-top: 10px;
   }
 
-  &__navigation{
+  &__navigation {
     max-width: 170px;
     width: 100%;
     margin-right: 30px;
 
   }
+
   &__navigation-title,
-  &__sub-title{
+  &__sub-title {
     @extend %roboto-500;
     font-size: 22px;
     margin-bottom: 38px;
@@ -149,75 +153,164 @@
 
   }
 
-  &__navigation-item{
+  &__navigation-item {
     margin-bottom: 10px;
   }
-  &__navigation-link:hover{
+
+  &__navigation-link:hover {
     color: #5f5f5f;
   }
 
-  &__sub{
+  &__sub {
     max-width: 470px;
     width: 100%;
 
   }
-  &__sub-text{
+
+  &__sub-text {
     margin-bottom: 30px;
   }
 
-  &__form{
+  &__form {
     display: flex;
     width: 100%;
     height: 50px;
   }
 
 
-  &__form-input{
-    border:none;
+  &__form-input {
+    border: none;
     padding: 0 15px;
     margin-right: 10px;
     box-shadow: 0px 7px 20px 0px rgba(192, 192, 192, 0.3);
     max-width: 320px;
     width: 100%;
-    &::placeholder{
+
+    &::placeholder {
       @extend %quicksand-500;
       font-size: 16px;
-      
+
     }
-    
+
 
   }
-  &__form-btn{
-    
-    border: none;
-    background-color: $accent;
-    padding: 0 26px;
-    color: #fff;
-    @extend %roboto-400;
-    font-size: 16px;
-    line-height: 26px;
-    text-transform: uppercase;
-    box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
-    cursor: pointer;
-    }
-    
-  
+
+  &__form-btn {
+    @extend %btn;
+    width: 140px;
+    padding: 0 25px;
+  }
+
+
 
 }
 
-.social{
+.social {
   display: flex;
-  &__link{
+
+  &__link {
     margin-right: 20px;
 
-    path{
+    path {
       fill: $default;
       transition: fill .5s;
     }
-    :hover path{
+
+    :hover path {
       fill: $accent;
     }
   }
+}
+
+
+.top-slider {
+  padding-top: 70px;
+  background-color: $bg;
+
+  &__container {
+    min-width: 1490px;
+  }
+
+  &__item {
+    display: flex !important;
+    justify-content: space-between;
+  }
+
+  &__content {
+    padding-top: 120px;
+    max-width: 670px;
+    margin-left: 160px;
+  }
+
+  &__title {
+    @extend %roboto-700;
+    font-size: 58px;
+    line-height: 68px;
+    color: $title;
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    max-width: 470px;
+    margin-bottom: 55px;
+  }
+
+
+  &__btn {
+    @extend %btn;
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+
+    li {
+      line-height: 0;
+      padding: 0 5px;
+
+      button {
+        border: none;
+        font-size: 0;
+        background-color: inherit;
+        width: 30px;
+        height: 30px;
+        border: 1px solid inherit;
+        border-radius: 50%;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          height: 6px;
+          width: 6px;
+          border-radius: 50%;
+          left: 50%;
+          top: 50%;
+          background-color: $default;
+          transform: translate(-50%, -50%);
+        }
+
+      }
+
+      &.slick-active {
+        button {
+          border: 1px solid $accent;
+
+          &::before {
+            background-color: $accent;
+          }
+        }
+
+      }
+    }
+
+
+  }
+
 }
 
 

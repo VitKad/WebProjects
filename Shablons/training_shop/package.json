@@ -9,6 +9,7 @@
   "author": "Victor Kadyko",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
     "dev-ip": "^1.0.1",

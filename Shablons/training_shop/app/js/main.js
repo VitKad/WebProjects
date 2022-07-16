@@ -9,6 +9,14 @@ $(function(){
     }
     );
 
+    $(".star").rateYo({
+      starWidth: "20px",
+      normalFill: "#ccccce",
+      ratedFill: "#ffc35b",
+      readOnly: true,
+
+    });
+
 });
   
 

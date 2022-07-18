@@ -38,3 +38,77 @@ body{
   max-width: 570px;
   margin: 0 auto 55px;
 }
+
+.modal{
+  padding: 120px 0;
+  &__links{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+
+  &__link{
+    padding: 0 30px;
+    @extend %roboto-400;
+    font-size: 22px;
+    color: #909090;
+    &--active{
+      @extend %roboto-700;
+      color: $accent;
+    }
+  }
+
+  &__form{
+    max-width: 570px;
+    margin: 0 auto;
+
+  }
+
+  &__form-label{
+    line-height: auto;
+    margin-bottom: 30px;
+
+  }
+
+  &__form-input{
+    display: block;
+    margin-top: 4px;
+    width: 100%;
+    border: none;
+    background-color: $bg;
+    height: 60px;
+    margin-bottom: 40px;
+    padding: 15px 20px;
+    @extend %quicksand-500;
+    font-size: 22px;
+    &::placeholder{
+      @extend %quicksand-500;
+      font-size: 22px;
+    }
+  }
+
+  &__form-btn{
+    width: 100%;
+    padding: 20px 0;
+    border:none;
+    background-color: #292929;
+    color: #fff;
+    text-align: center;
+    @extend %roboto-400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    display: block;
+    cursor: pointer;
+  }
+
+  &__form-checkbox{
+    margin: 20px 0;
+  }
+
+  &__form-recovery{
+    display: inline-block;
+    color: $accent;
+  }
+}

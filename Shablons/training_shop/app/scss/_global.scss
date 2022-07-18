@@ -1,10 +1,9 @@
-
 html,
-body{
+body {
   height: 100%;
 }
 
-body{
+body {
   @extend %quicksand-500;
   font-size: 16px;
   line-height: 26px;
@@ -13,17 +12,17 @@ body{
   flex-direction: column;
 }
 
-.main{
+.main {
   flex-grow: 1;
 }
 
-.container{
+.container {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-.title{
+.title {
   @extend %roboto-700;
   font-size: 48px;
   line-height: 26px;
@@ -33,44 +32,46 @@ body{
   text-align: center;
 }
 
-.text{
+.text {
   text-align: center;
   max-width: 570px;
   margin: 0 auto 55px;
 }
 
-.modal{
+.modal {
   padding: 120px 0;
-  &__links{
+
+  &__links {
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
   }
 
-  &__link{
+  &__link {
     padding: 0 30px;
     @extend %roboto-400;
     font-size: 22px;
     color: #909090;
-    &--active{
+
+    &--active {
       @extend %roboto-700;
       color: $accent;
     }
   }
 
-  &__form{
+  &__form {
     max-width: 570px;
     margin: 0 auto;
 
   }
 
-  &__form-label{
+  &__form-label {
     line-height: auto;
     margin-bottom: 30px;
 
   }
 
-  &__form-input{
+  &__form-input {
     display: block;
     margin-top: 4px;
     width: 100%;
@@ -81,16 +82,22 @@ body{
     padding: 15px 20px;
     @extend %quicksand-500;
     font-size: 22px;
-    &::placeholder{
+
+    &::placeholder {
       @extend %quicksand-500;
       font-size: 22px;
     }
+
   }
 
-  &__form-btn{
+  &__form-registerinput {
+    margin-bottom: 20px;
+  }
+
+  &__form-btn {
     width: 100%;
     padding: 20px 0;
-    border:none;
+    border: none;
     background-color: #292929;
     color: #fff;
     text-align: center;
@@ -103,12 +110,25 @@ body{
     cursor: pointer;
   }
 
-  &__form-checkbox{
+  &__form-checkbox {
     margin: 20px 0;
   }
 
-  &__form-recovery{
+  &__form-recovery {
     display: inline-block;
     color: $accent;
   }
+
+  &__form-text {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+
+  }
+
+
+  &__form-text+.modal__form-text {
+    margin-top: 40px;
+  }
+
 }

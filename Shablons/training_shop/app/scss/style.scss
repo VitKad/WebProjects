@@ -985,7 +985,52 @@
 }
 
 
+.page-404{
+  padding: 120px 0;
 
+  &__header{
+    background-color: $bg;
+  }
+  
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content{
+    align-items: center;
+    max-width: 570px;
+    width: 100%;
+    margin-right: auto;
+
+  }
+
+  &__title{
+  @extend %roboto-700;
+  font-size: 48px;
+  line-height: 26px;
+  margin-bottom: 30px;
+  color: $title;
+  }
+
+
+  &__text{
+    max-width: 470px;
+    margin-bottom: 60px;
+  }
+
+  &__btn{
+    @extend %btn;
+    letter-spacing: normal;
+    width: 180px;
+
+  }
+
+  &__img{
+    display: inline-block;
+  }
+}
 
 
 @import "media"

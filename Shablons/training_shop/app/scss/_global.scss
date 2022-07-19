@@ -132,3 +132,53 @@ body {
   }
 
 }
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__arrows{
+    text-transform: uppercase;
+    transition: all .3s;
+    span{
+      padding: 0 5px;
+     
+    }
+    path{
+      transition: all .3s;
+    }
+    &:hover{
+      color: $accent;
+      path{
+        fill: $accent;
+      }
+    }
+  }
+
+  &__list{
+    display: flex;
+    padding: 0 30px;
+  }
+
+  &__item{
+    margin: 0 15px;
+
+  }
+
+  &__item--dots{
+    margin: 0 0px;
+  }
+
+  &__link{
+    color: $default;
+    transition: all .3s;
+    &:hover{
+      color: $accent;
+    }
+  }
+
+  &__link--active{
+    color: $accent;
+  }
+}

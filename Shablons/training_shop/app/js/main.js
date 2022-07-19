@@ -1,5 +1,23 @@
 $(function(){
 
+
+
+  $('.shop-content__btn').on('click', function(){
+    $('.shop-content__btn').removeClass('shop-content__btn--active');
+    $(this).addClass('shop-content__btn--active');
+  });
+
+  $('.button-list').on('click', function(){
+    $('.product-item').addClass('product-item--list');
+  });
+
+  $('.button-grid').on('click', function(){
+    $('.product-item').removeClass('product-item--list');
+  });
+
+
+  $('.secelt-style').styler();
+
     $(".js-range-slider").ionRangeSlider({
       type: "double",
       prefix: "$",

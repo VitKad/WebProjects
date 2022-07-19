@@ -1,5 +1,19 @@
 $(function(){
 
+    $(".js-range-slider").ionRangeSlider({
+      type: "double",
+      prefix: "$",
+      onStart: function (data) {
+        $('.filter-price__text-from').text(data.from);
+        $('.filter-price__text-to').text(data.to);
+      },
+      onChange: function (data) {
+        $('.filter-price__text-from').text(data.from);
+        $('.filter-price__text-to').text(data.to);
+    },
+  });
+
+
     $('.top-slider__inner').slick({
       dots: true,
       arrows: false,

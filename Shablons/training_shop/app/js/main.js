@@ -1,5 +1,16 @@
 $(function(){
 
+
+
+  $('.tabs-product__link').on('click', function(e){
+    e.preventDefault();
+    $('.tabs-product__link').removeClass('tabs-product__link--active');
+    $(this).addClass('tabs-product__link--active');
+
+    $('.tabs-product__content-item').removeClass('tabs-product__content-item--active');
+    $($(this).attr('href')).addClass('tabs-product__content-item--active');
+  });
+
   $('.slide-product__mini').slick({
     asNavFor: '.slide-product__full',
     vertical: true,

@@ -1602,7 +1602,7 @@
   &__mini-item {
     min-width: 140px;
     max-height: 140px;
-    margin-bottom: 19px;
+    margin-bottom: 20px;
   }
 
   &__mini-img {
@@ -1808,8 +1808,76 @@
 
 .description-filter{
   &__color{
-    
+    margin-bottom: 39px;
   }
+
+  &__color-title{
+    margin-bottom: 5px;
+  }
+
+  &__color-label{
+    margin-right: 5px;
+  }
+
+  &__color-input{
+    @extend %radio-hidden;
+    &:checked+.description-filter__color-checkbox{
+        border: 1px solid $accent;
+    }
+  }
+
+  &__color-checkbox{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #d6d6d8;
+    position: relative;
+    span{
+
+      position: absolute;
+      left: 3px;
+      top: 3px;
+      width: 16px;
+      height: 16px;
+      background-color: #579;
+    }
+  }
+
+  &__size{
+    margin-bottom: 39px;
+  }
+
+  &__size-box{
+    display: flex;
+  }
+
+  &__size-title{
+    margin-bottom: 5px;
+  }
+
+  &__size-label{
+    margin-right: 10px;
+  }
+
+  &__size-input{
+    @extend %radio-hidden;
+    &:checked+.description-filter__size-checkbox{
+      border: 1px solid $accent;
+    }
+
+
+  }
+
+  &__size-checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #f0f0f0;
+
+  }
+
 }
 
 @import "media"

@@ -906,21 +906,7 @@
 }
 
 
-.blog__item-creator,
-.blog__item-date {
-  padding-left: 30px;
-  position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 3px;
-    left: 2px;
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 20px;
-  }
-}
 
 .blog {
   padding: 60px 0 160px;
@@ -976,30 +962,7 @@
     padding: 30px 40px;
   }
 
-  &__item-info {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
 
-  &__item-creator {
-    &:hover {
-      color: $title;
-    }
-
-    &::before {
-      background-image: url(../img/icons/user-blog.svg);
-
-    }
-  }
-
-  &__item-date {
-    &::before {
-      background-image: url(../img/icons/time.svg);
-
-    }
-
-  }
 
   &__item-titlelink {
     @extend %roboto-400;
@@ -1437,15 +1400,15 @@
 
   &__checkbox {
     border: 1px solid $default;
-    display: inline-block;
-    padding: 20px 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 18px;
     background-color: $bg;
     color: $default;
+    height: 40px;
   }
 
-  &__name {
-    height: 50px;
-  }
 
 
 }
@@ -1590,7 +1553,7 @@
     width: 370px;
   }
 
-  &__tabs{
+  &__tabs {
     padding-bottom: 60px;
     border-bottom: 1px solid $bg;
   }
@@ -1933,6 +1896,7 @@
 
 .comments {
   margin-bottom: 60px;
+
   &__item {
     display: flex;
     margin-bottom: 35px;
@@ -1992,15 +1956,16 @@
 
 }
 
-.comments-form{
-  &__title{
+.comments-form {
+  &__title {
     @extend %roboto-500;
     font-size: 22px;
     position: relative;
     color: $title;
     margin-bottom: 40px;
-    &::after{
-      content:"";
+
+    &::after {
+      content: "";
       position: absolute;
       bottom: -15px;
       left: 0;
@@ -2011,71 +1976,79 @@
     }
   }
 
- 
 
-  &__rating{
+
+  &__rating {
     margin-bottom: 25px;
   }
 
-  &__rating-text{
-  
-      @extend %quicksand-500;
-      color: $title;
-      margin-right: 60px;
-  
+  &__rating-text {
+
+    @extend %quicksand-500;
+    color: $title;
+    margin-right: 60px;
+
   }
 
-  &__radio-input{
+  &__radio-input {
     @extend %radio-hidden;
-    &:checked + .comments-form__radio{
+
+    &:checked+.comments-form__radio {
       background-image: url(../img/icons/star-check.svg);
     }
   }
-  &__label{
+
+  &__label {
     margin-right: 20px;
   }
-  &__radio{
+
+  &__radio {
     display: inline-block;
     width: 18px;
     height: 16px;
     background-image: url(../img/icons/star.svg);
 
-    &--star-2{
+    &--star-2 {
       width: 36px;
     }
-    &--star-3{
+
+    &--star-3 {
       width: 54px;
     }
-    &--star-4{
+
+    &--star-4 {
       width: 72px;
     }
-    &--star-5{
+
+    &--star-5 {
       width: 90px;
     }
   }
 
-  &__inputs{
+  &__inputs {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
   }
 
-  &__input{
+  &__input {
     width: 100%;
     height: 50px;
     padding: 0 20px;
     border: 1px solid $bg;
-    &::placeholder{
+
+    &::placeholder {
       @extend %quicksand-500;
       font-size: 16px;
       color: $default;
     }
-    & + .comments-form__input{
+
+    &+.comments-form__input {
       margin-left: 30px;
     }
   }
 
-  &__textarea{
+  &__textarea {
     width: 100%;
     height: 225px;
     padding: 20px 20px 10px 20px;
@@ -2083,51 +2056,308 @@
     display: block;
     resize: none;
     margin-bottom: 40px;
-    &::placeholder{
+
+    &::placeholder {
       @extend %quicksand-500;
       font-size: 16px;
       color: $default;
     }
   }
 
-  &__btn{
+  &__btn {
     @extend %btn;
     letter-spacing: 0;
   }
 }
 
-.related{
+.related {
   padding: 60px 0 120px;
-  &__title{
+
+  &__title {
     margin-bottom: 50px;
   }
 
-  &__items{
+  &__items {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
   }
 
-  &__img-box{
+  &__img-box {
     margin-bottom: 15px;
   }
 
-  &__item-title{
+  &__item-title {
     font-size: 18px;
     margin-top: 10px;
     margin-bottom: 0;
   }
 
-  &__oldprice +.product-item--sale{
+  &__oldprice+.product-item--sale {
     display: inline-block;
     margin-right: 25px;
     margin-left: 0;
   }
 
-  &__price{
+  &__price {
     display: inline-block;
   }
+
+}
+
+
+
+.blog-page {
+  padding: 120px 0 60px;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__content {
+    max-width: 770px;
+    width: 100%;
+    margin-right: 30px;
+  }
+
+  &__aside {
+    max-width: 370px;
+    width: 100%;
+  }
+
+  &__item {
+    margin-bottom: 60px;
+    &:hover{
+      box-shadow: 0px 20px 60px 0px rgba(202, 202, 202, 0.35);
+
+    }
+  }
+
+
+  &__item-imglink {
+    width: 100%;
+    height: 450px;
+    position: relative;
+  }
+
+  &__item-img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+  }
+
+  &__item-block {
+    padding: 50px 38px 40px;
+    border: 1px solid $border;
+    border-top:none;
+  }
+
+  &__item-titlelink {
+    display: inline-block;
+    &:hover{
+      .blog-page__item-title{
+        color: $accent;
+
+      }
+    }
+  }
+
+  &__item-title {
+    @extend %roboto-500;
+    font-size: 22px;
+    line-height: 32px;
+    color: $title;
+    margin-bottom: 20px;
+    transition: all .3s;
+  }
+
+  &__item-info {
+    justify-content: start;
+  }
+
+  &__item-creator {
+    margin-right: 30px;
+  }
+
+  &__item-popup {
+    position: absolute;
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item-play {
+    background-image: url(../img/icons/play-solid.svg);
+    height: 27px;
+    width: 20px;
+
+  }
+
+  &__item--noimage{
+    border-top: 1px solid $border;
+  }
+
+
+
+}
+
+.blog-slider{
+  position: relative;
+  .slick-arrow{
+    z-index: 2;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: $accent;
+    border-radius: 50%;
+    box-shadow: 0px 7px 20px 0px rgba(254, 62, 87, 0.3);
+    line-height: 0;
+    cursor: pointer;
+    path{
+      fill: #fff;
+    }
+
+  }
+
   
+  .slick-prev{
+    left: 40px;
+  }
+
+  .slick-next{
+    right: 40px;
+  }
+  .slick-disabled{
+    box-shadow: 0px 7px 20px 0px rgba(168, 168, 168, 0.3);
+    background-color: #fff;
+    path{
+      fill: $accent;
+    }
+  }
+}
+
+
+
+.worker{
+  margin-bottom: 40px;
+  padding: 40px 27px;
+  text-align: center;
+  border: 1px solid $border;
+
+  &__avatar{
+    height: 160px;
+    width: 160px;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  &__name{
+    @extend %roboto-700;
+    font-size: 18px;
+    color: $title;
+
+  }
+
+  &__position{
+    color: $accent;
+    margin-bottom: 10px;
+  }
+
+  &__text{
+    margin-bottom: 25px;
+    text-align: justify;
+  }
+  &__social{
+    display: flex;
+    justify-content: center;
+   
+  }
+
+  &__social-link{
+
+    path{
+      fill: $default;
+      transition: all .3s;
+    }
+    &:hover{
+      path{
+        fill: $accent;
+      }
+    }
+    & + .worker__social-link{
+      margin-left: 15px;
+    }
+  }
+}
+
+.latest-post{
+  margin-bottom: 40px;
+  padding: 40px 29px 20px;
+  border: 1px solid $border;
+  &__title{
+    @extend %roboto-400;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: $title;
+    margin-bottom: 40px;
+  }
+
+  &__item{
+    display: flex;
+    margin-bottom: 20px;
+
+    & + .latest-post__item{
+      padding-top: 20px;
+      border-top: 1px solid $border;
+    }
+
+  }
+
+  &__img{
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+
+  &__content-title{
+    @extend %roboto-400;
+    font-size: 18px;
+    color: $title;
+    line-height: 28px;
+    margin-top: -5px;
+    margin-bottom: 5px;
+  }
+
+  &__content-date{
+    padding-left: 25px;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      background-image: url(../img/icons/calendare.svg);
+      width: 16px;
+      height: 16px;
+      left: 0;
+      top: 5px;
+
+    }
+  }
+
 }
 
 @import "media"

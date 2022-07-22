@@ -68,8 +68,8 @@
             server: {
                 baseDir: "app/"
             },
-            notify: false,
-            host: devip() 
+             notify: false,
+             host: devip() 
         });
     }
 

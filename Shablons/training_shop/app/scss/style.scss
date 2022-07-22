@@ -32,6 +32,7 @@
     color: $title;
     font-size: 16px;
     padding: 0 3px 5px;
+    border-bottom: 1px solid transparent;
     transition: all .3s;
 
     &:hover {
@@ -48,6 +49,10 @@
     text-shadow: 0 0 .9px $accent, 0 0 .9px $accent;
     border-bottom: 1px solid $accent;
     color: $accent;
+  }
+
+  &__btn-link{
+    display: none;
   }
 }
 
@@ -75,6 +80,10 @@
     text-align: center;
     top: -8px;
     right: -10px;
+  }
+
+  &--adaptive{
+    display: none;
   }
 }
 
@@ -2584,7 +2593,7 @@
     margin-bottom: 10px;
     color: $title;
   }
-
+ 
   &__content-text{
     text-align: justify;
     margin-bottom: 50px;

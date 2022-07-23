@@ -221,6 +221,35 @@
     background-color: #fff;
   }
 
+  .contacts__inner {
+    display: block;
+  }
+
+  .contacts__content {
+    max-width: 100%;
+  }
+
+  .contacts__content-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contacts__content-title {
+    font-size: 39px;
+    line-height: 52px;
+  }
+
+  .contacts__content-item {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .contacts__content-text {
+    margin-bottom: 20px;
+  }
+
+
 }
 
 
@@ -444,6 +473,15 @@
     margin-bottom: 15px;
   }
 
+  .contacts__content-list {
+    display: block;
+  }
+  .contacts__content-item{
+    display: block;
+ 
+  }
+
+
 }
 
 
@@ -610,7 +648,8 @@
     background-position: 30%;
     padding: 15px;
     height: auto;
-    .container{
+
+    .container {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -652,12 +691,13 @@
     padding-right: 0;
   }
 
-  .breadcrumbs__item:first-child:before{
+  .breadcrumbs__item:first-child:before {
     top: -10px;
     right: 0;
     left: 0;
     margin: 0 auto;
   }
+
   .breadcrumbs__item::after {
     top: 25px;
     right: 0;
@@ -669,9 +709,35 @@
 
   .modal {
     padding: 60px 0;
-}
-  
+  }
 
+  .map {
+    padding: 60px 0;
+  }
+
+  .contacts__content-title {
+    font-size: 29px;
+    line-height: 37px;
+}
+
+
+.contacts__form {
+  width: 100%;
+  padding: 30px 20px;
+  
+}
+.contacts__form-box{
+  display: block;
+}
+
+.contacts__form-box .contacts__form-input+.contacts__form-input{
+  margin-left: 0;
+  margin-top: 30px;
+}
+
+.contacts__form-btn {
+  width: 100%;
+}
 }
 
 
@@ -787,7 +853,7 @@
     font-size: 19px;
   }
 
-  .top__container{
+  .top__container {
     background-image: none !important;
     background-color: #ececec !important;
   }
@@ -797,4 +863,29 @@
     font-size: 22px;
 
   }
+
+  #map {
+    height: 250px;
+  }
+  .contacts__form {
+    padding: 15px 10px;
+}
+  .contacts__content-item::before {
+    width: 40px;
+    height: 40px;
+    top: 7px;
+}
+
+.contacts__content-item::after {
+  left: 11px;
+  top: 16px;
+}
+.contacts__content-item--map::after {
+  left: 13px;
+}
+
+.contacts__content-item {
+  padding-left: 55px;
+}
+
 }

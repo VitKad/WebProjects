@@ -30,6 +30,11 @@
     display: none;
 
   }
+  .video-popup__content {
+    max-width: 470px;
+    padding: 80px 0;
+}
+
 }
 
 
@@ -140,9 +145,39 @@
     background-position: 90%;
     display: block;
   }
+
+  .video-popup {
+    padding: 0;
+  }
+
+.video-popup__inner{
+  display: block;
+}
+.video-popup__block {
+
+  background-position: center top;
+  max-width: 100%;
+  width: 100%;
+
 }
 
 
+.video-popup__content {
+  max-width: 100%;
+  text-align: center;
+
+}
+
+.video-popup__title{
+  text-align: center;
+}
+.video-popup__text{
+  margin-bottom: 20px;
+}
+.video-popup__btn{
+margin: 0 auto;
+}
+}
 
 
 
@@ -416,6 +451,15 @@
 }
 
 
+.title {
+  font-size: 31px;
+  line-height: 4px;
+}
+
+
+.video-popup__subtitle {
+    font-size: 20px;
+  }
 
 }
 
@@ -480,7 +524,7 @@
 }
 
 .title {
-  font-size: 30px;
+  font-size: 28px;
   line-height: 7px;
 }
 

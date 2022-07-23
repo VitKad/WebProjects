@@ -217,7 +217,8 @@
 .social {
   display: flex;
 
-  &__link {
+
+  &__links {
     margin-right: 20px;
 
     path {
@@ -225,11 +226,12 @@
       transition: fill .5s;
     }
 
-    :hover path {
+    &:hover path {
       fill: $accent;
     }
   }
 }
+
 
 
 .top-slider {

@@ -85,6 +85,11 @@
   &--adaptive{
     display: none;
   }
+
+  &__img{
+    width: 21px;
+    height: 20px;
+  }
 }
 
 
@@ -877,7 +882,7 @@
     display: flex;
     justify-content: space-between;
 
-    width: 570px;
+    max-width: 570px;
   }
 
   &__timer-item {

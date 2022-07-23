@@ -34,7 +34,17 @@
     max-width: 470px;
     padding: 80px 0;
 }
+.blog__items::after {
+  display: none;
+}
 
+.blog__items{
+  gap: 30px;
+}
+
+.blog__item-img {
+  height: auto;
+}
 }
 
 
@@ -177,12 +187,26 @@
 .video-popup__btn{
 margin: 0 auto;
 }
+
+
+.products::after {
+  top: auto;
+  bottom: 20px;
+  right: 30px;
+
 }
 
+.promo {
 
+  background-position: 30% center;
 
+}
 
+.promo__btn{
+  background-color: #fff;
+}
 
+}
 
 
 
@@ -368,6 +392,30 @@ margin: 0 auto;
 }
 
 
+.products {
+  padding: 60px 0;
+}
+
+.products__items {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.products::after {
+ display: none;
+}
+
+.blog__items {
+  flex-wrap: wrap;
+}
+
+.blog__item{
+  max-width: 100%;
+}
+.blog__item-img {
+
+  width: 100%;
+}
+
 }
 
 
@@ -461,7 +509,83 @@ margin: 0 auto;
     font-size: 20px;
   }
 
+  .products__items {
+    grid-template-columns: repeat(1, 1fr);
 }
+
+.product-item{
+  max-width: 100%;
+  width: 100%;
+}
+
+.product-item__img-box {
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+}
+
+.product-item__img {
+  max-height: 100%;
+  width: 100%;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.promo {
+  padding: 60px 0;
+  min-height: auto;
+  background-position: 50% center;
+
+}
+
+.promo__timer{
+  justify-content: space-around;
+}
+
+.promo__timer-item {
+  width: 85px;
+  height: 85px;
+}
+
+.promo__timer-item span {
+  font-size: 29px;
+  line-height: 7px;
+}
+
+.partners__list{
+  flex-wrap: wrap;
+  
+}
+
+.partners__item{
+  width: 33.33%;
+
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.partners__img{
+  display: inline-block;
+}
+
+.partners {
+  padding: 60px 0 60px;
+}
+
+.blog {
+  padding: 60px 0 60px;
+}
+
+
+
+}
+
+
+
+
+
 
 
 
@@ -524,9 +648,48 @@ margin: 0 auto;
 }
 
 .title {
-  font-size: 28px;
+  font-size: 26px;
   line-height: 7px;
 }
 
+.promo__timer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  
+}
 
+.promo__timer-item{
+  text-align: center;
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+}
+.promo__timer-item span {
+  font-size: 48px;
+  line-height: 25px;
+}
+
+
+.partners__item{
+  width: 50%;
+
+}
+
+.blog-box{
+  display: block;
+}
+
+.blog__item-block {
+  padding: 13px 13px;
+}
+
+.blog-box-creator{
+  display: block;
+  margin-bottom: 5px;
+}
+
+.blog__item-titlelink {
+  font-size: 19px;
+}
 }

@@ -1,7 +1,7 @@
 $(function(){
 
 
-  $('.menu__btn-link').on('click', function(){
+  $('.menu__btn-link, .menu__link').on('click', function(){
     $('.menu').toggleClass('menu--active');
   });
 

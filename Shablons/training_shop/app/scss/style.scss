@@ -354,7 +354,7 @@
   gap: 30px;
   position: relative;
 
-  ::before {
+  &::before {
     top: -47px;
     left: -44px;
     background-image: url("../img/categories/info-bg-left.png");
@@ -362,7 +362,7 @@
     height: 121px;
   }
 
-  ::after {
+  &::after {
 
     bottom: -23px;
     right: -23px;
@@ -371,8 +371,8 @@
     height: 52px;
   }
 
-  ::after,
-  ::before {
+  &::after,
+  &::before {
     content: "";
     position: absolute;
     z-index: -1;

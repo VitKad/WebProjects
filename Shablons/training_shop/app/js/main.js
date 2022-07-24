@@ -42,11 +42,20 @@ $(function(){
 
   $('.button-list').on('click', function(){
     $('.product-item').addClass('product-item--list');
+    $('.shop-content__inner').addClass('shop-content__inner--flex');
   });
 
   $('.button-grid').on('click', function(){
     $('.product-item').removeClass('product-item--list');
+    $('.shop-content__inner').removeClass('shop-content__inner--flex');
   });
+
+
+  $('.shop-content__filter-btn').on('click', function(){
+    $('.shop__filters').toggleClass('shop__filters--active');
+  });
+  
+
 
   $("[type='number']").keypress(function (e) {
     e.preventDefault();

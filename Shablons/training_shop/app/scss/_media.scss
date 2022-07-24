@@ -110,6 +110,29 @@
   .blog-page__inner{
     flex-direction: column;
   }
+
+  .page-404__inner{
+    flex-direction: column;
+  }
+
+  .page-404__img{
+    order:-1;
+    margin-bottom: 30px;
+  }
+
+  .page-404__content{
+    max-width: 700px;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .page-404__text {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.page-404__btn{
+  display: inline-flex;
+}
 }
 
 
@@ -865,6 +888,14 @@
 .blog-one__share{
   display: flex;
 }
+
+.page-404 {
+  padding: 60px 0;
+}
+.page-404__title {
+  font-size: 35px;
+  line-height: 0px;
+}
 }
 
 
@@ -1052,5 +1083,12 @@
   margin-bottom: 10px;
 }
 
+.page-404__title {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.page-404__img {
+  margin-bottom: 40px;
+}
 }
 

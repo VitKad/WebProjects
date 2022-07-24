@@ -1605,8 +1605,14 @@
   }
 
   &__full {
-    width: 560px;
+    max-width: 560px;
+    max-height: 650px;
+  }
+  &__full-img {
+    max-width: 560px;
     height: 650px;
+    width: 100%;
+    object-fit: cover;
   }
 }
 
@@ -2100,6 +2106,11 @@
     @extend %btn;
     letter-spacing: 0;
   }
+}
+
+.star-comment{
+  display: inline-block;
+  display: none;
 }
 
 .related {

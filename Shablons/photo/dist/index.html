@@ -14,109 +14,112 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Фотографии</title>
 </head>
 
 <body id="body">
-    <div id="wrapper">
 
+    <header class="header">
 
+        <div class="header__img">
+            <div class="header__slider">
 
-        <header class="header">
+                <img src="img/folio/4.jpg" alt="" class="header__slider-img">
 
-            <div class="header__img">
-                <div class="header__slider">
+                <img src="img/folio/2.jpg" alt="" class="header__slider-img header__slider-img--second">
 
-                    <img src="img/folio/4.jpg" alt="" class="header__slider-img">
+                <img src="img/folio/1.jpg" alt="" class="header__slider-img">
 
-                    <img src="img/folio/2.jpg" alt="" class="header__slider-img">
+                <img src="img/folio/3.jpg" alt="" class="header__slider-img">
 
-                    <img src="img/folio/1.jpg" alt="" class="header__slider-img">
-
-                    <img src="img/folio/3.jpg" alt="" class="header__slider-img">
-
-                </div>
-            </div>
-
-            <div class="header__top">
-                <div class="container">
-                    <div class="header__navigation">
-
-                        <a class="logo" href="#body">
-                            <img src="img/folio/camera.png" alt="" class="logo__img">
-                            <p class="logo__text">ПОПЫТКА №101</p>
-                        </a>
-
-                        <ul class="menu">
-                            <li class="menu__item">
-                                <a href="#about" class="menu__link">
-                                    Обо мне
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#photo" class="menu__link">
-                                    Галерея
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#reviews" class="menu__link">
-                                    Отзывы
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="#contacts" class="menu__link">
-                                    Контакты
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="header__content">
-                <h2 class="header__text">Волкова Яна</h2>
-                <h1 class="header__title">ПОПЫТКА №101</h1>
-                <p class="header__subtitle">Фотограф Петрозаводска</p>
-            </div>
-
-        </header>
-
-        <div id="about" class="about block">
-            <div class="container">
-                <h2 class="title about__title">Обо мне</h2>
-                <div class="about__block">
-                    <img src="img/photo.jpg" alt="" class="about__img">
-                    <div class="about__content">
-                        <h3 class="about__content-title">Здравствуйте!</h3>
-                        <p class="about__content-text">
-                            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
-                            тексты.
-                        </p>
-
-                        <p class="about__content-text">
-                            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
-                            тексты. Парадигматическая лучше всеми инициал собрал даже снова если наш, имеет
-                            коварных реторический текст грамматики власти рекламных, переписали одна речью
-                            продолжил!
-                        </p>
-
-                        <p class="about__content-text">
-                            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
-                            тексты. Парадигматическая лучше всеми инициал собрал даже снова если наш, имеет
-                            коварных реторический текст грамматики власти рекламных, переписали одна речью
-                            продолжил! Далеко-далеко за словесными горами в стране гласных и согласных живут
-                            рыбные тексты. 
-                        </p>
-                    </div>
-                </div>
             </div>
         </div>
 
-        <div id="photo" class="portfolio block">
+        <div class="header__top">
             <div class="container">
-                <h2 class="title portfolio__title">Галерея</h2>
-                <div class="portfolio__content">
+                <div class="header__navigation">
 
+                    <a class="logo" href="#body">
+                        <img src="img/folio/camera.png" alt="" class="logo__img">
+                        <p class="logo__text">ПОПЫТКА №101</p>
+                    </a>
+
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="#about" class="menu__link">
+                                Обо мне
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#photo" class="menu__link">
+                                Галерея
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#reviews" class="menu__link">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#contacts" class="menu__link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+
+                    <a class="header__bars-btn" href="#">
+                        <img class="header__bars-img" src="img/bars.svg" alt="bars">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header__content">
+            <h2 class="header__text">Волкова Яна</h2>
+            <h1 class="header__title">ПОПЫТКА №101</h1>
+            <p class="header__subtitle">Фотограф Петрозаводска</p>
+        </div>
+
+    </header>
+
+    <section id="about" class="about block">
+        <div class="container">
+            <h2 class="title about__title">Обо мне</h2>
+            <div class="about__block">
+                <img src="img/photo.jpg" alt="" class="about__img">
+                <div class="about__content">
+                    <h3 class="about__content-title">Здравствуйте!</h3>
+                    <p class="about__content-text">
+                        Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                        тексты.
+                    </p>
+
+                    <p class="about__content-text">
+                        Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                        тексты. Парадигматическая лучше всеми инициал собрал даже снова если наш, имеет
+                        коварных реторический текст грамматики власти рекламных, переписали одна речью
+                        продолжил!
+                    </p>
+
+                    <p class="about__content-text">
+                        Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                        тексты. Парадигматическая лучше всеми инициал собрал даже снова если наш, имеет
+                        коварных реторический текст грамматики власти рекламных, переписали одна речью
+                        продолжил! Далеко-далеко за словесными горами в стране гласных и согласных живут
+                        рыбные тексты.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="photo" class="portfolio block">
+        <div class="container">
+            <h2 class="title portfolio__title">Галерея</h2>
+            <div class="portfolio__content">
+                <div class="portfolio__content-inner">
                     <div class="portfolio__box">
                         <div class="portfolio__box-photo">
                             <a data-fancybox="gallery-a" href="img/categories/people.jpg">
@@ -144,13 +147,14 @@
                                 </a>
 
                             </div>
-
+                            <p class="portfolio__box-text">
+                                Люди
+                            </p>
                         </div>
-                        <p class="portfolio__box-text">
-                            Люди
-                        </p>
+                       
                     </div>
-
+                </div>
+                <div class="portfolio__content-inner">
                     <div class="portfolio__box">
                         <div class="portfolio__box-photo">
 
@@ -180,14 +184,15 @@
                                 </a>
 
                             </div>
-
-
-                        </div>
-                        <p class="portfolio__box-text">
+ <p class="portfolio__box-text">
                             Животные
                         </p>
-                    </div>
 
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="portfolio__content-inner">
                     <div class="portfolio__box">
                         <div class="portfolio__box-photo">
 
@@ -218,14 +223,16 @@
 
                             </div>
 
-
-
-                        </div>
-                        <p class="portfolio__box-text">
+    <p class="portfolio__box-text">
                             Природа
                         </p>
-                    </div>
 
+                        </div>
+                    
+                    </div>
+                </div>
+
+                <div class="portfolio__content-inner">
                     <div class="portfolio__box">
                         <div class="portfolio__box-photo">
 
@@ -256,13 +263,14 @@
                                 </a>
 
                             </div>
-
-                        </div>
-                        <p class="portfolio__box-text">
+  <p class="portfolio__box-text">
                             Свадьбы
                         </p>
+                        </div>
+                      
                     </div>
-
+                </div>
+                <div class="portfolio__content-inner">
                     <div class="portfolio__box">
                         <div class="portfolio__box-photo">
 
@@ -290,60 +298,62 @@
                                     <img src="img/popup/city/5.jpg" alt="" class="portfolio__popup-img">
                                 </a>
 
-                              
+
 
                             </div>
 
-
-                        </div>
-                        <p class="portfolio__box-text">
+  <p class="portfolio__box-text">
                             Город
                         </p>
+                        </div>
+                      
                     </div>
+                </div>
+                <div class="portfolio__content-inner">
+                <div class="portfolio__box">
+                    <div class="portfolio__box-photo">
 
-                    <div class="portfolio__box">
-                        <div class="portfolio__box-photo">
+                        <a data-fancybox="gallery-f" href="img/categories/other.jpg">
+                            <img src="img/categories/other.jpg" alt="" class="portfolio__box-img">
+                        </a>
 
-                            <a data-fancybox="gallery-f" href="img/categories/other.jpg">
-                                <img src="img/categories/other.jpg" alt="" class="portfolio__box-img">
+                        <div style="display:none">
+
+
+                            <a data-fancybox="gallery-f" href="img/popup/other/1.jpg">
+                                <img src="img/popup/other/1.jpg" alt="" class="portfolio__popup-img">
                             </a>
 
-                            <div style="display:none">
+                            <a data-fancybox="gallery-f" href="img/popup/other/2.jpg">
+                                <img src="img/popup/other/2.jpg" alt="" class="portfolio__popup-img">
+                            </a>
 
+                            <a data-fancybox="gallery-f" href="img/popup/other/3.jpg">
+                                <img src="img/popup/other/3.jpg" alt="" class="portfolio__popup-img">
+                            </a>
 
-                                <a data-fancybox="gallery-f" href="img/popup/other/1.jpg">
-                                    <img src="img/popup/other/1.jpg" alt="" class="portfolio__popup-img">
-                                </a>
+                            <a data-fancybox="gallery-f" href="img/popup/other/4.jpg">
+                                <img src="img/popup/other/4.jpg" alt="" class="portfolio__popup-img">
+                            </a>
 
-                                <a data-fancybox="gallery-f" href="img/popup/other/2.jpg">
-                                    <img src="img/popup/other/2.jpg" alt="" class="portfolio__popup-img">
-                                </a>
-
-                                <a data-fancybox="gallery-f" href="img/popup/other/3.jpg">
-                                    <img src="img/popup/other/3.jpg" alt="" class="portfolio__popup-img">
-                                </a>
-
-                                <a data-fancybox="gallery-f" href="img/popup/other/4.jpg">
-                                    <img src="img/popup/other/4.jpg" alt="" class="portfolio__popup-img">
-                                </a>
-
-
-
-                            </div>
 
 
                         </div>
-                        <p class="portfolio__box-text">
-                            Разное
-                        </p>
+
+ <p class="portfolio__box-text">
+                        Разное
+                    </p>
                     </div>
+                   
                 </div>
-
-
-
+                </div>
             </div>
-        </div>
 
+
+
+        </div>
+        </div>
+       </section>
         <div id="reviews" class="reviews block">
             <div class="container">
                 <h2 class="title reviews__title">Отзывы</h2>
@@ -504,7 +514,7 @@
             </div>
         </div>
 
-    </div>
+
 
     <footer class="footer">
         <div class="container">
@@ -518,8 +528,8 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-    <script src="js/main.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+        <script src="js/main.min.js"></script>
 </body>
 
 </html>

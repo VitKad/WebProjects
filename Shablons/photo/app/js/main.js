@@ -1,6 +1,5 @@
 $(function () {
 
-    
     $('.header__bars-btn, .menu__link').on('click', function(e){
         e.preventDefault();
         $('.menu').toggleClass('menu--active');
@@ -11,7 +10,7 @@ $(function () {
         fade: true,
         autoplay: true,
         autoplaySpeed: 5000,
-        speed: 2000,
+        
         prevArrow: '<svg class="slick-left" width="50" height="50" version="1.1" id="Capa_1" xmlns' +
                 '="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink" fill' +
                 '="white" x="0px" y="0px" viewBox="0 0 443.52 443.52" style="enable-background:' +
@@ -63,6 +62,24 @@ $(function () {
     });
     
 
+    const scene = document.querySelectorAll('.header__slider-img');
+    window.addEventListener("scroll", function(){
+        scene.forEach(function(userItem) {
+            let offset = this.window.pageYOffset;
+            userItem.style.backgroundPositionY = offset * 0.5 + "px";
+          });
+       
+    });
+/* 
+    const folio = document.querySelector('.portfolio');
+    window.addEventListener("scroll", function(){
+    let offset = this.window.pageYOffset;
+    folio.style.backgroundPositionY = offset * 0.8 + "px";
+      
+       
+    }); */
+
+    
 
 
 });

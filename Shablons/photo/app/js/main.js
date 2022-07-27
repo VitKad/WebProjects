@@ -1,5 +1,7 @@
 $(function () {
 
+
+   
     $('.header__bars-btn, .menu__link').on('click', function(e){
         e.preventDefault();
         $('.menu').toggleClass('menu--active');
@@ -79,7 +81,10 @@ $(function () {
        
     }); */
 
+    new WOW().init();
     
+
+  
 
 
 });

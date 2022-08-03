@@ -55,18 +55,25 @@ $(function () {
 
    // $('.popup-slider').slick('reinit');
 
-    $('.reviews__slider').slick({
+   /*  $('.reviews__slider').slick({
         arrows:false,
         dots:true,
         autoplay: true,
         autoplaySpeed: 10000,
  
-    });
+    }); */
     
 
-    const scene = document.querySelectorAll('.header__slider-img');
+    const scene = document.querySelectorAll('.header__parallax');
+    
+  
     window.addEventListener("scroll", function(){
+        /* scene.forEach(function(userItem) {
+            let positionBg = userItem.style.backgroundPositionY;
+            console.log(positionBg);
+        }); */
         scene.forEach(function(userItem) {
+           
             let offset = this.window.pageYOffset;
             userItem.style.backgroundPositionY = offset * 0.5 + "px";
           });
@@ -80,6 +87,23 @@ $(function () {
       
        
     }); */
+    if (window.matchMedia('screen and (max-width: 1000px)').matches) {
+        const scene = document.querySelectorAll('.header__parallax');
+    window.addEventListener("scroll", function(){
+        scene.forEach(function(userItem) {
+            let offset = this.window.pageYOffset;
+            userItem.style.backgroundPositionY = offset * 0 + "px";
+          });
+       
+    });
+       /*  $('.header__slider-img').removeClass('header__parallax'); */// ... действия, если устройство отвечает медиа-запросу
+      }
+   /*  $(window).on('resize', function(){
+        if (window.width()< 1001) { $('.header__slider-img').removeClass('header__parallax'); }
+   });
+       */
+
+
 
     new WOW().init();
     

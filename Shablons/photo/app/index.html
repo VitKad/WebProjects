@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/style.min.css">
-    <title>Фотографии</title>
+    <title>Попытка №101</title>
 </head>
 
 <body id="body">
@@ -25,13 +25,13 @@
         <div class="header__img">
             <div class="header__slider">
 
-                <div class="header__slider-img" style="background-image:url(img/folio/4.jpg)"></div>
+                <div class="header__slider-img header__parallax" style="background-image:url(img/folio/4.jpg)"></div>
 
-                <div class="header__slider-img header__slider-img--second" style="background-image:url(img/folio/2.jpg)"></div>
+                <div class="header__slider-img header__slider-img--second header__parallax" style="background-image:url(img/folio/2.jpg)"></div>
 
-                <div class="header__slider-img" style="background-image:url(img/folio/1.jpg)"></div>
+                <div class="header__slider-img header__parallax" style="background-image:url(img/folio/1.jpg)"></div>
 
-                <div class="header__slider-img" style="background-image:url(img/folio/3.jpg)"></div>
+                <div class="header__slider-img header__parallax" style="background-image:url(img/folio/3.jpg)"></div>
 
             </div>
         </div>
@@ -358,9 +358,9 @@
         <div class="container">
             <h2 class="title reviews__title">Отзывы</h2>
 
-            <div class="wow animate__animated animate__fadeInLeft reviews__slider" style="animation-delay: 0.2s;">
-                <div class="reviews__slider-box">
-                    <div class="reviews__block">
+            <div class="reviews__items" style="animation-delay: 0.2s;">
+                
+                    <div class="reviews__block wow animate__animated animate__fadeInLeft" style="animation-delay: 0.2s;">
                         <div class="reviews__info">
                             <img src="img/reviews/1.jpg" alt="" class="reviews__photo">
                             <div class="reviews__person">
@@ -369,47 +369,99 @@
                             </div>
                         </div>
                         <div class="reviews__content">
-                            <p class="reviews__text">Далеко-далеко за словесными горами, в стране гласных и
+                            <p class="reviews__text">
+                                Далеко-далеко за словесными горами, в стране гласных и
                                 согласных живут рыбные тексты. Они ее имени меня великий сих путь текст,
                                 однажды, коварных образ на берегу языком осталось, продолжил своего свою строчка
-                                снова знаках.</p>
+                                снова знаках.
+                            </p>
+                            <a class="reviews__link" data-fancybox="gallery-victor" href="img/reviews/victor/1.jpg">Посмотреть фотосессию...
+                                <img src="img/reviews/victor/1.jpg" alt="" class="portfolio__popup-img" style="display:none;">
+                            </a>
+                            <div style="display:none">
+                                <a data-fancybox="gallery-victor" href="img/reviews/victor/2.jpg">
+                                    <img src="img/reviews/victor/2.jpg" alt="" class="portfolio__popup-img">
+                                </a>
+                                <a data-fancybox="gallery-victor" href="img/reviews/victor/3.jpg">
+                                    <img src="img/reviews/victor/3.jpg" alt="" class="portfolio__popup-img">
+                                </a>
+                                <a data-fancybox="gallery-victor" href="img/reviews/victor/4.jpg">
+                                    <img src="img/reviews/victor/4.jpg" alt="" class="portfolio__popup-img">
+                                </a>
+                            </div>
+
                         </div>
                     </div>
-                </div>
-                <div class="reviews__slider-box">
+               
 
-                    <div class="reviews__block">
+                    <div class="reviews__block wow animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
                         <div class="reviews__info">
                             <img src="img/reviews/2.jpg" alt="" class="reviews__photo">
                             <div class="reviews__person">
                                 <p class="reviews__person-mark">5</p>
-                                <p class="reviews__person-name">Человек</p>
+                                <p class="reviews__person-name">Анастасия</p>
                             </div>
                         </div>
                         <div class="reviews__content">
                             <p class="reviews__text">Далеко-далеко за словесными горами, в стране гласных и
                                 согласных живут рыбные тексты. Они ее имени меня великий сих путь текст,
                                 однажды, коварных образ на берегу языком осталось, продолжил своего свою строчка
-                                снова знаках.</p>
+                                снова знаках.
+                            </p>
+                            <a class="reviews__link" data-fancybox="gallery-anastasia" href="img/reviews/anastasia/1.jpg">Посмотреть фотосессию...
+                                <img src="img/reviews/anastasia/1.jpg" alt="" class="portfolio__popup-img" style="display:none;">
+                            </a>
+                            <div style="display:none">
+                                <a data-fancybox="gallery-anastasia" href="img/reviews/anastasia/2.jpg">
+                                    <img src="img/reviews/anastasia/2.jpg" alt="" class="portfolio__popup-img">
+                                </a>
+                                <a data-fancybox="gallery-anastasia" href="img/reviews/anastasia/3.jpg">
+                                    <img src="img/reviews/anastasia/3.jpg" alt="" class="portfolio__popup-img">
+                                </a>
+                                <a data-fancybox="gallery-anastasia" href="img/reviews/anastasia/4.jpg">
+                                    <img src="img/reviews/anastasia/4.jpg" alt="" class="portfolio__popup-img">
+                                </a>
+                                <a data-fancybox="gallery-anastasia" href="img/reviews/anastasia/5.jpg">
+                                    <img src="img/reviews/anastasia/5.jpg" alt="" class="portfolio__popup-img">
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="reviews__slider-box">
-                    <div class="reviews__block">
+               
+                    <div class="reviews__block wow animate__animated animate__fadeInRight" style="animation-delay: 0.2s;">
                         <div class="reviews__info">
                             <img src="img/reviews/3.jpg" alt="" class="reviews__photo">
                             <div class="reviews__person">
                                 <p class="reviews__person-mark">5</p>
-                                <p class="reviews__person-name">Пёс</p>
+                                <p class="reviews__person-name">Антон</p>
                             </div>
                         </div>
                         <div class="reviews__content">
-                            <p class="reviews__text">Гав гав гав гав гав гав. Гав гав. Гав гав гав гав гав гав гав
-                                гав гав гав гав гав гав гав гав гав. ГАВ ГАВ ГАВ!</p>
+                            <p class="reviews__text">Далеко-далеко за словесными горами, в стране гласных и
+                                согласных живут рыбные тексты. Они ее имени меня великий сих путь текст,
+                                однажды, коварных образ на берегу языком осталось, продолжил своего свою строчка
+                                снова знаках.
+                            </p>
+                            <a class="reviews__link" data-fancybox="gallery-anton" href="img/reviews/anton/1.jpg">Посмотреть фотосессию...
+                                <img src="img/reviews/anton/1.jpg" alt="" class="portfolio__popup-img" style="display:none;">
+                            </a>
+                            <div style="display:none">
+                                <a data-fancybox="gallery-anton" href="img/reviews/anton/2.jpg">
+                                    <img src="img/reviews/anton/2.jpg" alt="" class="portfolio__popup-img">
+                                </a>
+                                <a data-fancybox="gallery-anton" href="img/reviews/anton/3.jpg">
+                                    <img src="img/reviews/anton/3.jpg" alt="" class="portfolio__popup-img">
+                                </a>
+                                <a data-fancybox="gallery-anton" href="img/reviews/anton/4.jpg">
+                                    <img src="img/reviews/anton/4.jpg" alt="" class="portfolio__popup-img">
+                                </a>
+                                <a data-fancybox="gallery-anton" href="img/reviews/anton/5.jpg">
+                                    <img src="img/reviews/anton/5.jpg" alt="" class="portfolio__popup-img">
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                
 
             </div>
 

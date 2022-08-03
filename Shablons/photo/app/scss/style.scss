@@ -66,9 +66,9 @@ body {
     }
 
     &__slider-img {
-        width: 100%;
+        max-width: 100%;
         height: 100vh;
-        object-fit: cover;
+        background-position: center 0;
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -390,27 +390,41 @@ z-index: 3;
 
 .reviews {
 
-    &__block {
-        width: 800px;
-        max-width: 100%;
-        min-height: 150px;
-        text-align: center;
-        align-items: center;
-        margin: 0 auto;
+    &__items{
         display: flex;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgb(180, 180, 180);
-        padding: 20px 30px;
-        margin-bottom: 30px;
+        justify-content: space-around;
+    }
+
+    &__block {
+       max-width: 300px;
+       width: 100%;
+       text-align: center;
+      
+
+    }
+
+    &__text{
+        margin-bottom: 20px;
+    }
+
+    &__link{
+        transition: all .3s;
+        color: rgb(131, 131, 131);
+        &:hover{
+            color: #000;
+        }
     }
 
     &__person {
 
         display: flex;
         justify-content: center;
-        margin-left: 10px;
+        margin-bottom: 15px;
+        font-size: 18px;
+      
 
         &-mark {
+            padding-left:10px;
             margin-right: 10px;
             position: relative;
 
@@ -422,29 +436,22 @@ z-index: 3;
                 height: 18px;
                 width: 18px;
                 position: absolute;
-                left: -20px;
+                left: -10px;
                 top: -1px;
             }
         }
 
     }
 
-    &__info {
-        margin-right: 50px;
-    }
-
     &__photo {
 
-        width: 120px;
-        height: 120px;
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
         border-radius: 50%;
         margin-bottom: 10px;
     }
 
-    &__slider-box {
-        padding: 0 15px;
-        margin-top: 10px;
-    }
 
 }
 

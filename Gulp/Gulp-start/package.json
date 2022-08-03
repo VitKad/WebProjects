@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "@fancyapps/fancybox": "^3.5.7",
+    "accordionjs": "^2.1.2",
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
     "dev-ip": "^1.0.1",
@@ -22,6 +23,8 @@
     "ion-rangeslider": "^2.3.1",
     "jquery": "^3.6.0",
     "jquery-form-styler": "^2.0.2",
+    "jquery-parallax.js": "^1.5.0",
+    "mixitup": "^3.3.1",
     "rateyo": "^2.3.2",
     "slick-carousel": "^1.8.1"
   },

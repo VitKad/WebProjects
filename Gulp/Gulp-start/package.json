@@ -11,6 +11,7 @@
   "devDependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "accordionjs": "^2.1.2",
+    "animate.css": "^4.1.1",
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
     "dev-ip": "^1.0.1",

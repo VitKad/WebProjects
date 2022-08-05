@@ -1,6 +1,11 @@
 $(function () {
 
-
+   
+    
+    $('.reviews__link, .portfolio__box-img').on("click", function(){
+        $('.header__top').removeClass('compensate-for-scrollbar');
+        $('.header__top').addClass('compensate-for-scrollbar');
+    });
    
     $('.header__bars-btn, .menu__link').on('click', function(e){
         e.preventDefault();
@@ -28,18 +33,9 @@ $(function () {
                 '.067l222.72,222.105L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883' +
                 ',3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795l236.817-236.15' +
                 '5c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z"></svg>',
-        /* responsive:[
-            {
-                breakpoint: 501,
-                settings: {
-                    arrows: false
-                }
-            }
-           
-        ] */
+        
     });
 
-    //$('.popup-link').magnificPopup();
 
 
   

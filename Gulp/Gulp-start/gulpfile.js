@@ -84,7 +84,8 @@
             'node_modules/rateyo/src/jquery.rateyo.js',
             'node_modules/mixitup/dist/mixitup.js',
             'node_modules/jquery-parallax.js/parallax.js', 
-            'node_modules/accordionjs/accordion.js',  */
+            'node_modules/accordionjs/accordion.js',
+            'app/js/wow.js',  */
             'app/js/main.js'
         ])
         .pipe(concat('main.min.js'))

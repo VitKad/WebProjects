@@ -8,25 +8,58 @@ body {
   line-height: 27px;
   color: #2C2B2B;
 }
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
-p,
-a,
+
+
+
+body,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-  padding: 0;
+h6,
+p,
+ul,
+ol,
+li,
+a,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
   margin: 0;
+  padding: 0;
 }
-a {
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a{
   text-decoration: none;
-  color: #FFFFFF;
+  color: inherit;
 }
 .container {
   max-width: 1220px;
@@ -159,6 +192,7 @@ a {
 *************/
 .services {
   padding-top: 200px;
+  min-height: 1100px;
 }
 .title {
   font-size: 36px;
@@ -327,6 +361,28 @@ font-weight: 300;
 .benefites{
   background-color: #e6f5fd;
   padding: 50px 0;
+  position: relative;
+  &::after{
+    content:"";
+    position: absolute;
+    bottom: -42px;
+    left: 112px;
+    background-image: url(../img/bg-planet-1.png);
+    width: 150px;
+    height: 149px;
+    z-index: 5;
+  }
+  &::before{
+    content:"";
+    position: absolute;
+    top: 60px;
+    left: 215px;
+    background-image: url(../img/bg-planet-2.png);
+    width: 120px;
+    height: 126px;
+    z-index: 5;
+  }
+
 }
 .benefites__inner {
   display: -webkit-flex;
@@ -340,10 +396,22 @@ font-weight: 300;
   width: 500px;
   object-fit: contain;
   transform: rotateY(-180deg);
+  z-index: 10;
 }
 .benefites__content {
   margin-top: -5px;
   width: 100%;
+  position: relative;
+  z-index: 10;
+  &::after{
+    content:"";
+    position: absolute;
+    bottom: -37px;
+    right: -122px;
+    background-image: url(../img/bg-sputnik.png);
+    width: 300px;
+    height: 143px;
+  }
 }
 .benefites__title {
   margin: 0;
@@ -360,6 +428,7 @@ font-weight: 300;
   grid-template-columns: repeat(2,1fr);
   grid-gap: 20px;
   text-align: center;
+
 }
 
 
@@ -388,23 +457,39 @@ font-weight: 300;
 /*CAROUSEL
 **********/
 
-.da{
-  background: #71b2d5;
-  border: 1px #4b85a4 solid;
-  color: #5A0D67;
-  color: #21062A;
-  color: #1565e5;
-  background-color: #e6f5fd;
-}
-
 
 .carousel {
   background-color: #e6f5fd;
   padding: 80px 0;
+  position: relative;
+  /* &::after{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(../img/bg-stars-2.png);
+    width: 209px;
+    height: 576px;
+    transform: rotateY(180deg);
+  } */
+  &::before{
+    content:"";
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    background-image: url(../img/bg-raketa.png);
+    width: 165px;
+    height: 145px;
+    z-index: 5;
+    transform: rotate(-60deg);
+  }
 }
 .carousel__inner {
   margin: 0 -9px;
   margin-top: 49px;
+}
+.carousel__inner-block{
+  z-index: 10;
 }
 .carousel__box {
   width: 390px;
@@ -475,6 +560,116 @@ font-weight: 300;
   height: 6px;
   background-color: #4B85A4;
 }
+
+
+
+/*RATE
+*************/
+
+.rate {
+  padding: 100px 0;
+
+
+  &__title {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+.da{
+  background: #71b2d5;
+  border: 1px #4b85a4 solid;
+  color: #5A0D67;
+  color: #21062A;
+  color: #1565e5;
+  background-color: #e6f5fd;
+}
+
+
+  &__item {
+    padding: 30px;
+    background-color: #fff;
+    width: 360px;
+    /* height: 577px; */
+    height: 100%;
+    border: 1px #4b85a4 solid;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &--economy{
+      position: relative;
+      &::after{
+        content:"";
+        position: absolute;
+        bottom: -200px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background-image: url(../img/price.png);
+        width: 190px;
+        height: 190px;
+      }
+    }
+  }
+
+  &__list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    color: #4b85a4;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &__enum {
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+  &__price {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    color: #21062A;
+    text-align: center;
+    position: relative;
+    display: block;
+
+    span {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 10px;
+      position: absolute;
+      top: 9px;
+      margin-left: 5px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
 /*CONTACTS
 *************/
 .contacts {
@@ -554,6 +749,16 @@ font-weight: 300;
   text-align: center;
   align-items: center;
   align-self: flex-end;
+  position: relative;
+  &::after{
+    content:"";
+    position: absolute;
+    bottom: -37px;
+    right: -122px;
+    background-image: url(../img/bg-planet-4.png);
+    width: 250px;
+    height: 140px;
+  }
 }
 .contacts__title {
   font-weight: 400;

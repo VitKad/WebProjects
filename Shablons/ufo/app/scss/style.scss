@@ -434,7 +434,6 @@ font-weight: 300;
   margin-right: 20px;
   width: 500px;
   object-fit: contain;
-  transform: rotateY(-180deg);
   z-index: 10;
 }
 
@@ -1099,8 +1098,19 @@ font-weight: 300;
 
   .services__list-item {
     width: 100%;
+    padding-bottom: 20px;
   }
-
+  .services__list-link {
+    position: inherit;
+    opacity: 1;
+    bottom:auto;
+  }
+  .services__list-item:hover .services__list-link {
+    opacity: 1;
+    bottom: auto;
+    left: auto;
+  }
+  
   .services__inner {
     flex-wrap: wrap;
     margin-top: 30px;
@@ -1109,6 +1119,7 @@ font-weight: 300;
 
   .services__list-item:hover {
     width: 100%;
+    padding-bottom: 20px;
   }
 
   .services__list {
@@ -1187,6 +1198,27 @@ font-weight: 300;
 
   .contacts__btn {
     width: 100%;
+}
+
+.animated {
+  /*CSS transitions*/
+  -o-transition-property: none !important;
+  -moz-transition-property: none !important;
+  -ms-transition-property: none !important;
+  -webkit-transition-property: none !important;
+  transition-property: none !important;
+  /*CSS transforms*/
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  /*CSS animations*/
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
 }
 }
 
@@ -1403,6 +1435,9 @@ font-weight: 300;
     font-size: 40px;
   }
 
+  .services__list-link {
+    font-size: 13px;
+  }
 
   .services__content-title {
     font-size: 16px;

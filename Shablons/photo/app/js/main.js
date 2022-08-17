@@ -1,6 +1,4 @@
 $(function () {
-
-   
     
     $('.reviews__link, .portfolio__box-img').on("click", function(){
         $('.header__top').removeClass('compensate-for-scrollbar');
@@ -49,25 +47,12 @@ $(function () {
 
 
 
-   // $('.popup-slider').slick('reinit');
-
-   /*  $('.reviews__slider').slick({
-        arrows:false,
-        dots:true,
-        autoplay: true,
-        autoplaySpeed: 10000,
- 
-    }); */
-    
 
     const scene = document.querySelectorAll('.header__parallax');
     
   
     window.addEventListener("scroll", function(){
-        /* scene.forEach(function(userItem) {
-            let positionBg = userItem.style.backgroundPositionY;
-            console.log(positionBg);
-        }); */
+       
         scene.forEach(function(userItem) {
            
             let offset = this.window.pageYOffset;
@@ -75,14 +60,7 @@ $(function () {
           });
        
     });
-/* 
-    const folio = document.querySelector('.portfolio');
-    window.addEventListener("scroll", function(){
-    let offset = this.window.pageYOffset;
-    folio.style.backgroundPositionY = offset * 0.8 + "px";
-      
-       
-    }); */
+
     if (window.matchMedia('screen and (max-width: 1000px)').matches) {
         const scene = document.querySelectorAll('.header__parallax');
     window.addEventListener("scroll", function(){
@@ -92,14 +70,9 @@ $(function () {
           });
        
     });
-       /*  $('.header__slider-img').removeClass('header__parallax'); */// ... действия, если устройство отвечает медиа-запросу
+     
       }
-   /*  $(window).on('resize', function(){
-        if (window.width()< 1001) { $('.header__slider-img').removeClass('header__parallax'); }
-   });
-       */
-
-
+  
 
     new WOW().init();
     

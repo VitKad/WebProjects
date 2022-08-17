@@ -7,28 +7,12 @@
 @import "fonts";
 @import "global";
 
-/* html {
-    scroll-behavior: smooth;
-    
-} */
 
 body {
     position: relative;
-    //  font-family: 'EB Garamond', serif;
     font-family: 'Noto Sans', sans-serif;
 }
 
-/* html, body {
-    height: 100%;
-    overflow: hidden;
-  } */
-
-/*   html > body > #wrapper {
-    height: 100%;
-    position: relative;
-    overflow: auto;
-  }
- */
 .container {
     max-width: 1230px;
     margin: 0 auto;
@@ -38,7 +22,6 @@ body {
 
 .logo {
     display: flex;
-
     align-items: center;
 
     &__img {
@@ -55,7 +38,6 @@ body {
 }
 
 .header {
-    overflow: hidden;
 
     position: relative;
 
@@ -76,25 +58,17 @@ body {
     &__top {
         background-color: rgba(0, 0, 0, 0.8);
         z-index: 5;
-
         position: fixed;
-
         top: 0;
         left: 0;
-        // transform: translateX(-50%);
-        max-width: 100%;
         width: 100%;
-
     }
 
     &__navigation {
         display: flex;
         justify-content: space-between;
-
         padding: 10px 0;
-
         align-items: center;
-
         font-size: 20px;
         width: 100%;
 
@@ -106,12 +80,11 @@ body {
         top: 26%;
         left: 50%;
         transform: translateX(-50%);
-        width: auto;
-
         color: white;
         opacity: 100%;
-        font-family: 'EB Garamond', sans-serif;
+        font-family: 'Oswald', sans-serif;
         z-index: 4;
+
     }
 
     &__text {
@@ -140,22 +113,17 @@ body {
 
 }
 
-.portfolio__content {}
-
 .animate__animated.animate__bounce {
     --animate-duration: 2s;
 }
 
 .menu {
-
     &__item {
         display: inline;
-
         position: relative;
 
         &::after {
             content: "";
-
             position: absolute;
             right: 0;
             left: 0;
@@ -169,7 +137,6 @@ body {
         }
 
         &:hover::after {
-
             visibility: visible;
             transform: scaleX(1) translate(0, 0);
         }
@@ -232,7 +199,6 @@ body {
         position: absolute;
         top: -1px;
         left: 0;
-
         width: 281px;
         height: 276px;
         background-repeat: no-repeat;
@@ -240,20 +206,15 @@ body {
         background-image: url(../img/lens.png);
     }
 
-    /*   background-image: url(../img/about-bg.png); */
     &__block {
         display: flex;
         justify-content: space-between;
         padding-bottom: 20px;
         min-height: 450px;
-z-index: 3;
-
+        z-index: 3;
     }
 
-    &__title {}
-
     &__img {
-        width: auto;
         height: 500px;
         border-radius: 20px;
         margin-left: 60px;
@@ -268,11 +229,11 @@ z-index: 3;
         max-width: 650px;
         width: 50%;
         box-shadow: 20px 0px 60px 0px #cacaca;
-        /*  height: 640px; */
         padding: 40px 50px;
         background-color: #fbfbfb;
         z-index: 2;
         overflow: hidden;
+
         &::after {
             content: "";
             position: absolute;
@@ -285,12 +246,6 @@ z-index: 3;
             background-repeat: no-repeat;
             background-size: cover;
         }
-
-
-
-        /*         background-image: url(../img/notebook.png);
-        background-repeat: no-repeat;
-        background-size: cover; */
 
         &-title {
             margin-bottom: 30px;
@@ -312,9 +267,6 @@ z-index: 3;
 .portfolio {
     background-image: url(../img/about-bg.png);
     background-color: #fbfbfb;
-    /*background-image: url(../img/popup/2.jpg);
-    /* background-size: cover; */
-    /* background-attachment: fixed; */
     padding-bottom: 120px;
 
     &__content {
@@ -323,21 +275,11 @@ z-index: 3;
         grid-gap: 50px 40px;
     }
 
-    /*     display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        flex-grow: inherit;
-    }
-
-    &__content-inner{
-        width: 33%;
-
-    } */
     &__box {
         margin: 0 auto;
         max-width: 300px;
         text-align: center;
-        margin: 0 auto 0;
+        margin: 0 auto;
         width: 100%;
 
         &-photo {
@@ -347,8 +289,6 @@ z-index: 3;
             box-shadow: 0 0 10px #000;
             overflow: hidden;
             position: relative;
-
-
         }
 
         &-text {
@@ -382,49 +322,42 @@ z-index: 3;
         }
     }
 
-    /*  &__box+&__box{
-        margin-left: 100px;
-    }*/
-
 }
 
 .reviews {
 
-    &__items{
+    &__items {
         display: flex;
         justify-content: space-around;
     }
 
     &__block {
-       max-width: 300px;
-       width: 100%;
-       text-align: center;
-      
-
+        max-width: 300px;
+        width: 100%;
+        text-align: center;
     }
 
-    &__text{
+    &__text {
         margin-bottom: 20px;
     }
 
-    &__link{
+    &__link {
         transition: all .3s;
         color: rgb(131, 131, 131);
-        &:hover{
+
+        &:hover {
             color: #000;
         }
     }
 
     &__person {
-
         display: flex;
         justify-content: center;
         margin-bottom: 15px;
         font-size: 18px;
-      
 
         &-mark {
-            padding-left:10px;
+            padding-left: 10px;
             margin-right: 10px;
             position: relative;
 
@@ -455,18 +388,6 @@ z-index: 3;
 
 }
 
-.popup {
-    margin: 0 auto;
-    width: 1000px;
-    max-height: 700px;
-
-}
-
-.popup-img {
-    width: 1000px;
-    max-height: 700px;
-    object-fit: cover;
-}
 
 .slick-left {
     position: absolute;
@@ -501,45 +422,6 @@ z-index: 3;
     bottom: 50%;
     cursor: pointer;
     z-index: 1000;
-}
-
-
-
-
-.slick-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: -10px;
-    margin-left: -40px;
-    z-index: 99999999;
-    /*  position: absolute;
-    left: 45%;
-    right: 45%;
-
-    bottom: -20px;*/
-
-    button {
-        background: #D1D6E3;
-
-        font-size: 0;
-        border: 0;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        padding: 0;
-        outline: none;
-
-        margin: 0 5px;
-
-        cursor: pointer;
-
-    }
-
-    .slick-active {
-        button {
-            background: black;
-        }
-    }
 }
 
 

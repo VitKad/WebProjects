@@ -1,0 +1,43 @@
+$accent: #fe3e57;
+$title: #29282d;
+$default: #8d8d8d;
+$bg: #f6f6f6;
+$border: #ececec;
+
+%sfp-400 {
+  font-family: 'SFProDisplay-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%sfp-500 {
+  font-family: 'SFProDisplay-Medium', sans-serif;
+  font-weight: 500;
+}
+  
+%sfp-600 {
+  font-family: 'SFProDisplay-Semibold', sans-serif;
+  font-weight: 600;
+}
+
+%sfp-700 {
+  font-family: 'SFProDisplay-Bold', sans-serif;
+  font-weight: 700;
+} 
+
+
+
+%checkbox-reset{
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  position: absolute;
+ }
+
+ 
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+ }
+ @function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+ }

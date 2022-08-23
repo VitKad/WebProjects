@@ -111,6 +111,23 @@ body {
         display: none;
     }
 
+    .slick-left {
+        position: absolute;
+        left: 20px;
+        bottom: 50%;
+        cursor: pointer;
+        z-index: 1001;
+    
+    }
+    
+    .slick-right {
+        position: absolute;
+        right: 20px;
+        bottom: 50%;
+        cursor: pointer;
+        z-index: 1000;
+    
+    }
 }
 
 .animate__animated.animate__bounce {
@@ -329,12 +346,73 @@ body {
     &__items {
         display: flex;
         justify-content: space-around;
+
+        padding: 0 70px;
     }
 
+    .slick-list{
+        
+    }
+
+    .slick-arrow{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 50px;
+        top:50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 3;
+        font-size: 0;
+        padding: 0;
+        margin: 0;
+        background: none;
+        border:none;
+    }
+
+    .slick-next{
+        left: auto;
+        right:-15px;
+    }
+    .slick-prev{
+        left:-15px;
+    }
+
+     
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -60px;
+    padding: 0;
+   
+  }
+  
+  .slick-dots button {
+    border: none;
+    background-color: #d9d9d9;
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 8px;
+    cursor: pointer;
+  
+  }
+  
+  
+  .slick-dots .slick-active  button {
+    background: black;
+  }
+  
+
     &__block {
-        max-width: 300px;
-        width: 100%;
+        max-width: 300px;     
         text-align: center;
+        margin: 0 auto;
     }
 
     &__text {
@@ -382,6 +460,7 @@ body {
         height: 160px;
         object-fit: cover;
         border-radius: 50%;
+        margin: 0 auto;
         margin-bottom: 10px;
     }
 
@@ -389,23 +468,7 @@ body {
 }
 
 
-.slick-left {
-    position: absolute;
-    left: 20px;
-    bottom: 50%;
-    cursor: pointer;
-    z-index: 1001;
 
-}
-
-.slick-right {
-    position: absolute;
-    right: 20px;
-    bottom: 50%;
-    cursor: pointer;
-    z-index: 1000;
-
-}
 
 .slick-left-popup {
     position: absolute;

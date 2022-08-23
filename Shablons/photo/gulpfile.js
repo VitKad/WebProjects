@@ -12,7 +12,7 @@ const {src , dest, watch, parallel, series} = require('gulp'),
 
     function styles(){
         return src('app/scss/**/*.scss')
-        .pipe(scss({outputStyle: 'compressed'}))
+        .pipe(scss())
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 10 version'],
